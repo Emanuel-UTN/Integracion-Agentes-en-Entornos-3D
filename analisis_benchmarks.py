@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Ruta al archivo JSON generado por Unity/FastAPI
-JSON_PATH = "./versiones/Voyager_Architecture_v1.json"
+JSON_PATH = "./versiones/Voyager_Architecture_v2.json"
 
 def cargar_datos():
     if not os.path.exists(JSON_PATH):
@@ -54,7 +54,7 @@ def generar_graficos(df):
     fig, axs = plt.subplots(2, 2, figsize=(14, 10))
     fig.suptitle('Análisis de Rendimiento Cognitivo y Físico (Voyager)', fontsize=16, fontweight='bold')
     
-    colores = plt.cm.get_cmap('viridis', len(df))
+    colores = plt.colormaps.get_cmap('viridis')
 
     # 1. Tasa de Éxito (Resolución sin Timeout)
     ax = axs[0, 0]

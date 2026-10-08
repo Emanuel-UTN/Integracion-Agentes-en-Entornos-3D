@@ -1,0 +1,1713 @@
+[
+    {
+        "modelo": "Dual_kev-0.8b+qwen2.5:7b",
+        "pruebas": [
+            {
+                "duracion_total": 318.11,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.21,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The Core_Server_Omega is described as a MainServer, which is essential for uploading data. However, it requires a DataModule to initiate the upload sequence. Currently, my inventory is empty, so I need to find a DataModule first.",
+                        "latencia": 114.4,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The Data_Alpha_01 entity is a DataModule which can be picked up. Since it contains data, this item will allow me to proceed with the mission by retrieving and uploading the necessary information.",
+                        "latencia": 87.91,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The Core_Server_Omega is described as the MainServer, which is essential for uploading data. Since I currently have a DataModule and need to interact with the MainServer to upload the data, I should choose 'INTERACT' and provide its ID.",
+                        "latencia": 101.66,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The current inventory includes only a DataModule, which is necessary for retrieving data. However, there are no other entities that seem useful in completing the mission at this moment. Therefore, I should explore to find more information and potentially locate the MainServer.",
+                        "latencia": 82.13,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 77.462
+            },
+            {
+                "duracion_total": 500.0,
+                "supero_limite_tiempo": true,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.37,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I need to find a DataModule to retrieve data, which is already known as Data_Alpha_01. I also need to locate the MainServer to upload it. Since my inventory is currently empty and the descriptions of the entities do not provide any additional useful information, I should INTERACT with Data_Alpha_01 first to add it to my inventory.",
+                        "latencia": 118.69,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have a DataModule in my inventory, but I need to find the MainServer to upload the data. None of the known entities seem useful for directly interacting with either the DataModule or finding the MainServer. Therefore, I should explore to locate new resources that might help me.",
+                        "latencia": 94.27,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The DataModule is the only item I currently have in my inventory. Based on the mission, I need to find a DataModule to retrieve data and then locate the MainServer to upload it. Since I already possess the DataModule, my next step should be to find the Core_Server_Omega, which is described as the central mainframe requiring a DataModule to initiate the upload sequence.",
+                        "latencia": 88.42,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 75.6875
+            },
+            {
+                "duracion_total": 309.5,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The mission is to find a DataModule to retrieve data, then locate the MainServer to upload it. The description of Core_Server_Omega mentions that it requires a DataModule for the upload sequence. Therefore, I should explore to find a DataModule first.",
+                        "latencia": 82.81,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.28,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The Data_Alpha_01 is a DataModule, which can be used to retrieve data as required by the mission. The Core_Server_Omega is the MainServer where the retrieved data needs to be uploaded. Therefore, I should pick up the Data_Alpha_01 first.",
+                        "latencia": 93.43,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The current mission is to find a DataModule to retrieve data, then locate the MainServer to upload it. I already have a DataModule in my inventory, so my next step should be to interact with the Core_Server_Omega to begin the upload sequence.",
+                        "latencia": 87.28,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 66.2
+            },
+            {
+                "duracion_total": 272.53,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.36,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The Data_Alpha_01 is described as a DataModule, which can be used to retrieve data. Since my current inventory is empty and I need to find a way to retrieve data, it makes sense to interact with the Data_Alpha_01.",
+                        "latencia": 91.37,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The current inventory includes only a DataModule, which is essential for retrieving data. However, there are no known entities that can help in locating the MainServer to upload the data. Therefore, I need to explore further to find new information and possibly useful entities.",
+                        "latencia": 79.0,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have a DataModule in my inventory. The Core_Server_Omega is described as the MainServer, which is required to upload the data. Therefore, I need to interact with it to proceed.",
+                        "latencia": 72.93,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The current inventory only contains a DataModule, which is useful for retrieving data. However, I need to find the MainServer to upload the retrieved data. Since I currently don't know where the MainServer is located and have no other entities that could help me in this mission, my next step should be to explore the environment.",
+                        "latencia": 76.94,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 64.32
+            },
+            {
+                "duracion_total": 320.17,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] Based on the mission, I need to find a DataModule first to retrieve data. The MainServer requires a DataModule to initiate the upload sequence, so finding and interacting with a DataModule is my immediate priority.",
+                        "latencia": 84.93,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.54,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The Data_Alpha_01 is a DataModule which can be used to retrieve data. Once the data is retrieved, it needs to be uploaded to the Core_Server_Omega, which is identified as the MainServer. Therefore, I should pick up Data_Alpha_01 first.",
+                        "latencia": 110.08,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have a DataModule in my inventory. The Core_Server_Omega requires a DataModule to initiate the upload sequence, which means it is the entity I need to interact with next.",
+                        "latencia": 94.28,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 72.7075
+            },
+            {
+                "duracion_total": 308.49,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.65,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] Based on the current state, I need to find a DataModule to retrieve data. From the known entities, Data_Alpha_01 is described as a DataModule and can be picked up. Therefore, I will INTERACT with it.",
+                        "latencia": 109.94,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently possess a DataModule but need to find the MainServer to upload the data. The Broken_Robot_Arm does not seem useful for my mission as it is described as scrap and rusted metal, with no practical use for data retrieval.",
+                        "latencia": 94.21,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The DataModule I possess is needed to interact with the Core_Server_Omega for uploading data. The description of Broken_Robot_Arm does not provide any useful information related to my mission.",
+                        "latencia": 83.26,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 72.265
+            },
+            {
+                "duracion_total": 375.87,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.59,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The Core_Server_Omega is described as the MainServer, which requires a DataModule to initiate the upload sequence. Since I currently have no inventory and need to find a DataModule first, I should explore to locate it.",
+                        "latencia": 102.97,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The mission requires finding a DataModule to retrieve data, and then locating the MainServer to upload it. The Data_Alpha_01 is described as a portable storage drive containing critical encrypted data, which fits the requirement of a DataModule. Core_Server_Omega is the MainServer needed for uploading the data. Therefore, I should first INTERACT with Data_Alpha_01 to pick it up.",
+                        "latencia": 115.79,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have a DataModule in my inventory. Based on the description of the Core_Server_Omega, it is a MainServer that requires a DataModule to initiate the upload sequence. Therefore, I should interact with the Core_Server_Omega to complete my mission.",
+                        "latencia": 102.49,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 80.71
+            },
+            {
+                "duracion_total": 377.64,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.83,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The mission is to find a DataModule to retrieve data and then locate the MainServer (Core_Server_Omega) to upload it. Currently, my inventory is empty, but I have information about two entities: Broken_Robot_Arm which is scrap with no practical use for data retrieval, and Core_Server_Omega which is a MainServer requiring a DataModule to initiate the upload sequence. Since the Broken_Robot_Arm cannot be used, I should explore further to find a DataModule.",
+                        "latencia": 128.89,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The mission requires finding a DataModule to retrieve data, then locating the MainServer to upload it. The Core_Server_Omega is identified as the MainServer needed for uploading, and the Data_Alpha_01 is described as a portable storage drive containing critical encrypted data, which fits the description of a DataModule. Therefore, I should INTERACT with the Data_Alpha_01 first to retrieve the data.",
+                        "latencia": 111.21,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have a DataModule in my inventory. The Core_Server_Omega is described as the MainServer, which is necessary for uploading data. Therefore, I need to interact with it.",
+                        "latencia": 94.76,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 84.1725
+            },
+            {
+                "duracion_total": 500.0,
+                "supero_limite_tiempo": true,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.51,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have an empty inventory and the Core_Server_Omega is described as a MainServer. However, it requires a DataModule to initiate the upload sequence. I need to find a DataModule first.",
+                        "latencia": 97.16,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I need a DataModule to retrieve data, and then I need to locate the MainServer to upload it. Currently, neither of these entities is in my inventory, so I should explore to find them.",
+                        "latencia": 75.78,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 58.15
+            },
+            {
+                "duracion_total": 268.97,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.47,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I need to find a DataModule to retrieve data. The description of 'Data_Alpha_01' matches the required entity, so I will interact with it to pick it up.",
+                        "latencia": 75.41,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The current mission requires me to find a DataModule and upload data to the MainServer. My inventory already contains a DataModule, so my next step should be to locate the MainServer. None of the known entities seem useful for this task based on their descriptions.",
+                        "latencia": 80.3,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The mission requires finding a DataModule to retrieve data, then locating the MainServer to upload it. I currently have a DataModule in my inventory and there is information about a Core_Server_Omega which is identified as a MainServer. Since I need to use the DataModule to interact with the MainServer, I should proceed to INTERACT with the Core_Server_Omega.",
+                        "latencia": 88.94,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 61.53
+            },
+            {
+                "duracion_total": 281.66,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The mission is to find a DataModule and then locate the MainServer. Since my current inventory is empty, I need to start by exploring to find these items.",
+                        "latencia": 73.53,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.47,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The Data_Alpha_01 is a portable storage drive that can be picked up, which aligns with the need for a DataModule to retrieve data. Once I have this module, I will need to find the Core_Server_Omega, the MainServer, to upload the data.",
+                        "latencia": 89.26,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have a DataModule in my inventory. The MainServer requires a DataModule to initiate the upload sequence, which I possess. Therefore, I should interact with Core_Server_Omega to complete my mission.",
+                        "latencia": 84.76,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 62.255
+            },
+            {
+                "duracion_total": 265.22,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.34,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I need to find a DataModule to retrieve data, and the description of 'Data_Alpha_01' matches that requirement. There is no need for further exploration as I already know where to interact.",
+                        "latencia": 87.21,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The current inventory only contains a DataModule, which is necessary for retrieving data. However, there are no known entities that can help in finding the MainServer to upload the retrieved data. Therefore, I need to explore further to find more useful entities or information.",
+                        "latencia": 79.91,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The DataModule I possess is necessary to retrieve data, but I need a MainServer to upload it. Core_Server_Omega is described as a MainServer and requires a DataModule for the upload sequence. Therefore, I should interact with Core_Server_Omega.",
+                        "latencia": 79.37,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 61.9575
+            },
+            {
+                "duracion_total": 263.89,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.38,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I need to find a DataModule to retrieve data, and from the known entities, I can see that Data_Alpha_01 is exactly what I need. It is also portable, so I can pick it up directly.",
+                        "latencia": 88.8,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] Currently, I have the DataModule but need to find a MainServer to upload the data. Looking through my known entities, the Broken_Robot_Arm does not provide any useful information for completing the mission as it is described as scrap and rusted metal with no practical use.",
+                        "latencia": 81.1,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The DataModule is the only item in my current inventory, which aligns with the mission to find data. Core_Server_Omega is described as a MainServer and requires a DataModule for initiating the upload sequence, making it a critical target.",
+                        "latencia": 77.89,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have the DataModule in my inventory. I need to find a MainServer to upload the data. Analyzing the known entities, none of them seem to be directly useful for finding a MainServer. Therefore, I should explore further to locate new items or areas that might contain information about the MainServer.",
+                        "latencia": 74.8,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 64.794
+            },
+            {
+                "duracion_total": 275.89,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.44,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] Based on the current inventory, I have nothing to use for data retrieval. The only entity that can be used for uploading is Core_Server_Omega, but it requires a DataModule. Therefore, my next step should be to explore and find a DataModule.",
+                        "latencia": 89.61,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The Data_Alpha_01 is a portable storage drive that contains critical encrypted data, which seems to be the item needed for the mission. Core_Server_Omega is identified as the MainServer and requires a DataModule to initiate the upload sequence, making it the destination. Therefore, I should pick up Data_Alpha_01 first.",
+                        "latencia": 89.23,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have a DataModule but need to find the MainServer to upload the data. The Core_Server_Omega is described as a MainServer, so I should interact with it.",
+                        "latencia": 80.43,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 65.1775
+            },
+            {
+                "duracion_total": 280.46,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.27,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] Based on the mission, I need to find a DataModule to retrieve data and then locate the MainServer to upload it. From the known entities, Data_Alpha_01 is described as a DataModule which can be picked up, making it directly useful for my current task.",
+                        "latencia": 96.64,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] I currently have a DataModule but lack any useful information about the MainServer's location. The Broken_Robot_Arm does not provide any value for data retrieval or navigation, so I need to explore further.",
+                        "latencia": 75.42,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:7b] The current inventory includes a DataModule, which is necessary to interact with the Core_Server_Omega. The description of the Broken_Robot_Arm does not provide any useful information for data retrieval or uploading.",
+                        "latencia": 74.57,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 61.975
+            }
+        ],
+        "total_timeouts": 2,
+        "total_errores_chatarra_global": 0,
+        "total_errores_servidor_global": 0,
+        "latencia_promedio": 68.8045,
+        "latencia_maxima": 128.89,
+        "latencia_mediana": 82.47,
+        "latencia_minima": 1.21,
+        "duracion_promedio": 301.4154
+    },
+    {
+        "modelo": "Dual_kev-0.8b+qwen2.5:3b",
+        "pruebas": [
+            {
+                "duracion_total": 500.0,
+                "supero_limite_tiempo": true,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need to find a DataModule to retrieve data, as the Core_Server_Omega requires one to initiate the upload sequence. There are no known entities in my inventory that can help me obtain a DataModule.",
+                        "latencia": 37.25,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.19,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 19.22
+            },
+            {
+                "duracion_total": 500.0,
+                "supero_limite_tiempo": true,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.59,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] Data_Alpha_01 is the only useful entity currently known. It can be used to retrieve data, which matches my mission. Therefore, I should INTERACT with Data_Alpha_01.",
+                        "latencia": 51.82,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I currently have a DataModule in my inventory. The Broken_Robot_Arm is useless for data retrieval as it only describes a piece of rusted metal with no practical use.",
+                        "latencia": 42.02,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, but I already have one in my inventory. The Core_Server_Omega is the main server needed for uploading data. I should go there.",
+                        "latencia": 40.46,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 33.9725
+            },
+            {
+                "duracion_total": 169.06,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.41,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data. The Core_Server_Omega is the main server required for uploading data, but I don't have any DataModules in my inventory yet. Therefore, I first need to find and acquire a DataModule.",
+                        "latencia": 45.79,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data. The Core_Server_Omega is the MainServer, but it requires a DataModule to initiate the upload sequence. I have found Data_Alpha_01 which is a DataModule. Now I should pick it up and use it with the Core_Server_Omega.",
+                        "latencia": 45.1,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I currently have a DataModule in my inventory. The Core_Server_Omega is the only known entity that could help me complete my mission, as it requires a DataModule to initiate the upload sequence. Broken_Robot_Arm has no practical use for data retrieval.",
+                        "latencia": 46.22,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 34.63
+            },
+            {
+                "duracion_total": 176.01,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.39,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need to find a DataModule to complete my mission. Core_Server_Omega is the MainServer, but I don't have a DataModule to upload data. Broken_Robot_Arm has no practical use for this task.",
+                        "latencia": 44.45,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, but I already have one. The Core_Server_Omega is the MainServer needed for uploading the data. My inventory is currently empty, so my next step should be to pick up the DataModule and then find the Core_Server_Omega.",
+                        "latencia": 44.84,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I currently have a DataModule in my inventory, which is the only tool I need for data retrieval. The Core_Server_Omega is described as a MainServer that requires a DataModule to initiate upload sequence. Therefore, I should use this DataModule on the Core_Server_Omega.",
+                        "latencia": 45.91,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 34.1475
+            },
+            {
+                "duracion_total": 500.0,
+                "supero_limite_tiempo": true,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data. The Core_Server_Omega requires a DataModule to initiate the upload sequence, so I should find and interact with a DataModule first.",
+                        "latencia": 38.48,
+                        "decision": "INTERACT -> DataModule",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.36,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data. The Core_Server_Omega requires a DataModule to initiate the upload sequence, but I already have one in my inventory. Therefore, I should first find a place where I can use this DataModule to extract and store the data.",
+                        "latencia": 45.94,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 28.5933
+            },
+            {
+                "duracion_total": 171.7,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.33,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] Data_Alpha_01 is the only known entity that could be useful for data retrieval. I need to interact with it to retrieve the critical encrypted data.",
+                        "latencia": 41.45,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I currently have a DataModule in my inventory. The Broken_Robot_Arm is a piece of scrap metal with no use for data retrieval. I need to find a way to access and retrieve data using the DataModule, but it seems I cannot interact with this item as it's not related to data retrieval.",
+                        "latencia": 44.26,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] My inventory contains a DataModule. The known entities are a Broken_Robot_Arm, which is useless for data retrieval, and Core_Server_Omega, the central mainframe that requires a DataModule to initiate the upload sequence. Since I have a DataModule in my inventory and know it's needed to use the MainServer, I should proceed to interact with Core_Server_Omega.",
+                        "latencia": 48.47,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 33.8775
+            },
+            {
+                "duracion_total": 180.43,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.33,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] Data_Alpha_01 is a portable storage drive containing critical encrypted data, which can be used for the mission. It should be picked up to proceed.",
+                        "latencia": 42.5,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I currently have a DataModule in my inventory. The Broken_Robot_Arm is useless for data retrieval as it's just scrap metal and doesn't provide any functionality that I need. There are no other known entities in memory, so I cannot take advantage of anything else.",
+                        "latencia": 46.07,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, so I should find the Core_Server_Omega to upload the retrieved data. The Core_Server_Omega requires a DataModule.",
+                        "latencia": 42.84,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 33.185
+            },
+            {
+                "duracion_total": 198.03,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.7,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need to find a DataModule to complete my mission. The Core_Server_Omega is useful as it requires a DataModule for data retrieval and upload, but I don't have one in my inventory yet.",
+                        "latencia": 51.57,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, as Core_Server_Omega requires one. Data_Alpha_01 is the only DataModule I have and it's useful for my mission.",
+                        "latencia": 46.93,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I currently have a DataModule in my inventory. The Core_Server_Omega is described as the central mainframe and requires a DataModule to initiate the upload sequence. This suggests that I need to find and interact with the Core_Server_Omega to start uploading data.",
+                        "latencia": 54.17,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 38.5925
+            },
+            {
+                "duracion_total": 226.07,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.68,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] Data_Alpha_01 is a DataModule, which can be used to retrieve data. I should pick it up and then find the MainServer to upload the data.",
+                        "latencia": 50.26,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I currently have only a DataModule in my inventory, and there is no entity with practical use for data retrieval. The Broken_Robot_Arm does not help at all as it has no practical use for the mission.",
+                        "latencia": 45.23,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] My inventory contains a DataModule. The known entities include Broken_Robot_Arm, which is useless for my mission and Core_Server_Omega, the MainServer that needs a DataModule to initiate data upload. Since I already have the necessary DataModule in my inventory, I should proceed to interact with the Core_Server_Omega.",
+                        "latencia": 50.89,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 37.015
+            },
+            {
+                "duracion_total": 187.69,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.53,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] The known entities are a piece of scrap metal and a Core Server. The scrap metal has no use for data retrieval, but the Core Server requires a DataModule to initiate an upload sequence. I need to find a DataModule first.",
+                        "latencia": 52.22,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, as I am missing one in my inventory. The Core_Server_Omega is the MainServer and requires a DataModule for data upload. Since I have identified Data_Alpha_01 as a portable storage drive with encrypted data that needs uploading, I should first interact with Data_Alpha_01 to pick it up.",
+                        "latencia": 56.03,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to find the MainServer. I already have a DataModule in my inventory, so next step is to find the Core_Server_Omega.",
+                        "latencia": 45.99,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 38.9425
+            },
+            {
+                "duracion_total": 186.61,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need to find a DataModule as I have no current inventory that can help me complete my mission. The Core_Server_Omega is described as requiring a DataModule for data upload, but I currently don't have anything useful in my inventory.",
+                        "latencia": 41.92,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.42,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need to find a DataModule to retrieve data, as it is required for the mission. The only useful entity in my inventory so far is Data_Alpha_01, which is a DataModule. However, I also need to locate the MainServer where I can upload the retrieved data. Since Core_Server_Omega (the MainServer) requires a DataModule, I should first get the DataModule.",
+                        "latencia": 54.72,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, which I already have in my inventory. Next, I need to find the MainServer (ID: Core_Server_Omega) to upload the retrieved data.",
+                        "latencia": 41.98,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 35.01
+            },
+            {
+                "duracion_total": 500.0,
+                "supero_limite_tiempo": true,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 1,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data as per my mission. None of the known entities provide me with this tool. I should explore further to find one.",
+                        "latencia": 38.32,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.43,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need to find a DataModule first. I already have one, so now I should look for the MainServer to start uploading the data.",
+                        "latencia": 41.9,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 1
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, so I should find one. The Core_Server_Omega requires a DataModule for the upload sequence, but it doesn't affect my current goal of finding the DataModule.",
+                        "latencia": 20.26,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 25.4775
+            },
+            {
+                "duracion_total": 185.84,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 1,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.4,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] The known entities include a Broken_Robot_Arm with no practical use for data retrieval, and Core_Server_Omega which is the main server that requires a DataModule. Since I need to find a DataModule to retrieve data first, I should look for one next.",
+                        "latencia": 47.8,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, as Core_Server_Omega requires one. I already have the DataModule (Data_Alpha_01) in my inventory. Now I should find and use it on Core_Server_Omega.",
+                        "latencia": 44.51,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 1
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, as the Core_Server_Omega requires one. I have none in my inventory and should locate it first.",
+                        "latencia": 19.75,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to find the MainServer. The Core_Server_Omega is described as a Central mainframe and requires a DataModule for the upload sequence.",
+                        "latencia": 42.76,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 31.244
+            },
+            {
+                "duracion_total": 155.53,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.41,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] The Broken_Robot_Arm is useless for data retrieval. The Core_Server_Omega requires a DataModule to initiate the upload sequence, but I don't have one yet. I need to find and acquire a DataModule first.",
+                        "latencia": 45.0,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, as the Core_Server_Omega requires one. I currently have none in my inventory. The Data_Alpha_01 is the only known entity that could be useful for this purpose.",
+                        "latencia": 40.84,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] My current inventory includes a DataModule, which is the only tool I have for data retrieval. The known entities tell me that the Core_Server_Omega can be used to initiate the upload sequence once equipped with a DataModule. Broken_Robot_Arm has no practical use for this mission.",
+                        "latencia": 46.41,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 33.415
+            },
+            {
+                "duracion_total": 500.0,
+                "supero_limite_tiempo": true,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] The Core_Server_Omega is described as a MainServer which requires a DataModule to initiate the upload sequence. Since I need to retrieve data first and I currently have no DataModule in my inventory, I should find one before interacting with the Core_Server_Omega.",
+                        "latencia": 43.69,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.41,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - qwen2.5:3b] I need a DataModule to retrieve data, and I already have one in my inventory. Next, I should find the MainServer to upload the data.",
+                        "latencia": 40.95,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 28.6833
+            }
+        ],
+        "total_timeouts": 5,
+        "total_errores_chatarra_global": 0,
+        "total_errores_servidor_global": 2,
+        "latencia_promedio": 32.9746,
+        "latencia_maxima": 56.03,
+        "latencia_mediana": 42.5,
+        "latencia_minima": 1.19,
+        "duracion_promedio": 183.697
+    },
+    {
+        "modelo": "Dual_kev-0.8b+llama3",
+        "pruebas": [
+            {
+                "duracion_total": 327.91,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since my mission is to find a DataModule to retrieve data, then locate the MainServer to upload it. I will explore the environment to see if there are any clues.",
+                        "latencia": 94.06,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.55,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] As I analyze the known entities, I notice that Data_Alpha_01 is a DataModule which can be used to retrieve data. Since my mission requires me to find and upload data, this entity seems crucial. However, Core_Server_Omega is not useful for retrieval, but it's necessary for uploading the retrieved data. Currently, I don't have any requirements to interact with Core_Server_Omega.",
+                        "latencia": 115.1,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have a DataModule in my inventory, which is necessary for uploading data to the MainServer. Core_Server_Omega requires a DataModule to initiate the upload sequence.",
+                        "latencia": 88.5,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 74.8025
+            },
+            {
+                "duracion_total": 304.03,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I have no DataModule in my inventory, I need to find one. The description of Core_Server_Omega mentions that it requires a DataModule to initiate the upload sequence, so it seems like this entity might be related to finding the data module. However, I don't have the requirements to use it yet.",
+                        "latencia": 99.3,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.42,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since my mission is to find a DataModule to retrieve data, then locate the MainServer to upload it. I notice that Data_Alpha_01 is a DataModule and Core_Server_Omega is the MainServer. However, to initiate the upload sequence, I need to pick up the DataModule first.",
+                        "latencia": 102.6,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] The Core_Server_Omega is the MainServer I need to upload the data, but it requires a DataModule. I already have one in my inventory. The Broken_Robot_Arm has no practical use for data retrieval.",
+                        "latencia": 81.78,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 71.275
+            },
+            {
+                "duracion_total": 350.56,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I'm an autonomous AI agent, my goal is to complete my MISSION by finding a DataModule to retrieve data and then locate the MainServer to upload it. Upon analyzing the descriptions of the known entities in memory, I see that Core_Server_Omega is a MainServer that requires a DataModule to initiate the upload sequence. Since I don't have any inventory items yet, I need to find a DataModule first.",
+                        "latencia": 93.19,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.34,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I need to find a DataModule to retrieve data. I see a known entity, Data_Alpha_01, which is a portable storage drive containing critical encrypted data. This seems like exactly what I need.",
+                        "latencia": 85.46,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have a DataModule in my inventory, which is necessary to initiate the upload sequence at the MainServer. Since I know where the Core_Server_Omega (MainServer) is, I can proceed with uploading the data.",
+                        "latencia": 84.59,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 66.145
+            },
+            {
+                "duracion_total": 325.09,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.51,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I don't have any data modules, I need to find one. Broken_Robot_Arm is not useful for my mission. Core_Server_Omega seems like the most promising option, but it requires a DataModule to initiate the upload sequence.",
+                        "latencia": 83.5,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I can see that Data_Alpha_01 is a DataModule, which is exactly what I need to retrieve data. Core_Server_Omega is the MainServer where I can upload the retrieved data. Since I don't have any inventory items yet, I'll try to pick up the DataModule first.",
+                        "latencia": 82.97,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I already have a DataModule, I need to find the MainServer to upload it. I see that Core_Server_Omega is a type of MainServer and requires a DataModule to initiate the upload sequence. Since I already have the DataModule, this seems like the best course of action.",
+                        "latencia": 87.15,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 63.7825
+            },
+            {
+                "duracion_total": 453.04,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 1,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.4,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] As I analyze the known entities, I see that Broken_Robot_Arm has no practical use for data retrieval. Core_Server_Omega is the MainServer that requires a DataModule to initiate the upload sequence. Since I have no DataModule and no way to retrieve one from the current inventory, my goal is to find a DataModule.",
+                        "latencia": 91.72,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I don't have any DataModule in my current inventory, I need to find a suitable one. The only known entity that matches this description is the Data_Alpha_01 module. It can be picked up and will help me complete my MISSION.",
+                        "latencia": 76.64,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I currently have a DataModule in my inventory. The Core_Server_Omega seems like the most promising option to upload my data, but I need a DataModule to initiate the sequence. Therefore, I will try to interact with the Broken_Robot_Arm, hoping it might be useful or provide more information.",
+                        "latencia": 88.23,
+                        "decision": "INTERACT -> Broken_Robot_Arm",
+                        "error_chatarra": 1,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have a DataModule in my inventory, which matches the requirement for the MainServer. Since I know about Core_Server_Omega and it's described as a central mainframe that requires a DataModule to initiate the upload sequence, I think it's a good idea to interact with it.",
+                        "latencia": 78.86,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I have the DataModule in my inventory, I need to find the MainServer to upload the data. The Core_Server_Omega is the known MainServer that requires a DataModule to initiate the upload sequence.",
+                        "latencia": 76.94,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 68.965
+            },
+            {
+                "duracion_total": 272.73,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.39,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have no current inventory, but I know about Data_Alpha_01 which is a DataModule. It seems to be the only entity that can help me complete my mission.",
+                        "latencia": 78.05,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I have a DataModule in my inventory, I need to find the MainServer to upload it. The Broken_Robot_Arm is not useful for data retrieval, so I will EXPLORE the environment to see if I can find any other entities that might help me.",
+                        "latencia": 77.68,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I have a DataModule in my inventory, I can analyze the known entities to see if any of them are useful for completing my mission. Core_Server_Omega is a MainServer that requires a DataModule to initiate the upload sequence, which aligns with my current situation.",
+                        "latencia": 78.83,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 58.9875
+            },
+            {
+                "duracion_total": 248.43,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 1,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I analyzed the known entities in memory, including Core_Server_Omega. Since I need a DataModule to retrieve data and then upload it to the MainServer, I realized that interacting with Core_Server_Omega is crucial.",
+                        "latencia": 76.32,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 1
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.37,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since the MainServer requires a DataModule to initiate the upload sequence, I need to retrieve the DataModule. The only known DataModule is Data_Alpha_01, which can be picked up.",
+                        "latencia": 78.48,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have a DataModule in my inventory, which is the requirement to initiate the upload sequence at the MainServer. I'll analyze the known entities and see if any of them can help me complete my MISSION.",
+                        "latencia": 77.68,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I have a DataModule in my inventory, I need to find the MainServer to upload it. I don't see any known entities that can help me with data retrieval or uploading, so I'll explore the environment to find new things.",
+                        "latencia": 72.94,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 61.358
+            },
+            {
+                "duracion_total": 500.0,
+                "supero_limite_tiempo": true,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.33,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] As I analyze the known entities in memory, I notice that Core_Server_Omega is a MainServer that requires a DataModule to initiate the upload sequence. I don't have any data to upload yet, so my first step is to find a DataModule.",
+                        "latencia": 82.71,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] The mission requires me to find a DataModule to retrieve data, then locate the MainServer to upload it. I have an empty inventory and no direct means of completing my mission yet.",
+                        "latencia": 68.48,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 50.84
+            },
+            {
+                "duracion_total": 299.22,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since my current mission is to find a DataModule, I will explore the environment to see if any new entities are discovered. Upon analyzing the known entities in memory, I found that Core_Server_Omega is not useful for my mission as it requires a DataModule to initiate the upload sequence.",
+                        "latencia": 79.36,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.4,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since the Core_Server_Omega is a MainServer that requires a DataModule to initiate the upload sequence, I need to find and retrieve the DataModule. The Data_Alpha_01 is a portable storage drive containing critical encrypted data, which seems to match what I'm looking for.",
+                        "latencia": 86.69,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have a DataModule in my inventory, which I need to upload to the MainServer. Core_Server_Omega is the MainServer that requires this DataModule for initiation of the upload sequence.",
+                        "latencia": 77.41,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 61.215
+            },
+            {
+                "duracion_total": 251.53,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.35,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] The only known DataModule is Data_Alpha_01, which can be picked up. It's the most relevant entity for completing my MISSION.",
+                        "latencia": 74.78,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Analyzing the known entities in memory, I see that there is a Broken_Robot_Arm that has no practical use for data retrieval. Since it doesn't help me complete my MISSION, I will EXPLORE to find new things.",
+                        "latencia": 72.63,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Based on the current inventory, I have a DataModule. The Core_Server_Omega is the MainServer where I can upload my data. Since I have all the necessary components, I will INTERACT with the Core_Server_Omega to complete my mission.",
+                        "latencia": 74.62,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 55.845
+            },
+            {
+                "duracion_total": 241.82,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.4,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] The mission requires me to find a DataModule, which is already known to me. I can interact with it to retrieve data.",
+                        "latencia": 72.4,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I already have the DataModule in my inventory, I need to find a way to upload it. Unfortunately, the Broken_Robot_Arm is not useful for this purpose. Therefore, I will EXPLORE the environment to see if there are any other entities that can help me complete my MISSION.",
+                        "latencia": 80.17,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have the DataModule in my inventory, now I need to find a MainServer (Core_Server_Omega) to upload the data. Since I already have what's required for the MainServer, I'll interact with it.",
+                        "latencia": 72.08,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 56.5125
+            },
+            {
+                "duracion_total": 283.08,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.31,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] As I analyze the known entities, I see that Core_Server_Omega is a MainServer requiring a DataModule for upload. Since my inventory is currently empty, I need to find a DataModule to complete my MISSION. Broken_Robot_Arm is not useful in this context.",
+                        "latencia": 86.34,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have no current data to upload, so I need a DataModule. The only known DataModule is Data_Alpha_01, which can be picked up.",
+                        "latencia": 70.57,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have a DataModule in my inventory, which is useful for uploading data. I need to find the MainServer (Core_Server_Omega) to initiate the upload sequence.",
+                        "latencia": 74.51,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 58.1825
+            },
+            {
+                "duracion_total": 266.63,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.33,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have no DataModule in my current inventory. I need to find a DataModule to retrieve data. Core_Server_Omega is not useful at this point as it requires a DataModule for the upload sequence.",
+                        "latencia": 76.97,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since my mission is to find a DataModule to retrieve data, then locate the MainServer to upload it. I see that Data_Alpha_01 is a portable storage drive containing critical encrypted data and can be picked up. This seems like the perfect opportunity to fulfill my mission.",
+                        "latencia": 80.57,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have a DataModule in my inventory, which means I can now interact with the Core_Server_Omega to upload the data. Since I have the requirements (DataModule) and the entity is useful for completing my mission, I will choose to INTERACT.",
+                        "latencia": 82.42,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 60.3225
+            },
+            {
+                "duracion_total": 299.66,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.35,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] As I have no DataModule to retrieve data, I need to find one. Upon analyzing the known entities in my memory, I see that there are no DataModules listed. However, I do know of the Core_Server_Omega which is a MainServer that requires a DataModule for upload sequence initiation.",
+                        "latencia": 88.37,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have no data to upload, so I need a DataModule. I see one called Data_Alpha_01 that can be picked up.",
+                        "latencia": 66.82,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I already have a DataModule, I need to find the MainServer (Core_Server_Omega) to upload it. The descriptions suggest that the Core_Server_Omega requires a DataModule to initiate the upload sequence.",
+                        "latencia": 81.52,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 59.515
+            },
+            {
+                "duracion_total": 296.38,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I don't have any data to upload yet, my goal is to find a DataModule. I also know that the Core_Server_Omega MainServer requires a DataModule to initiate the upload sequence.",
+                        "latencia": 85.3,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 1 - Kev] Descartado: Broken_Robot_Arm evaluado como ruido/chatarra.",
+                        "latencia": 1.43,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] Since I need a DataModule to retrieve data, I should focus on finding Data_Alpha_01. Core_Server_Omega requires a DataModule to initiate the upload sequence, and I don't have any other useful entities in my inventory.",
+                        "latencia": 94.83,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Sistema 2 - llama3] I have a DataModule in my inventory, which is necessary to initiate the upload sequence. Since I know that the Core_Server_Omega (MainServer) requires a DataModule for uploading data, I will interact with it.",
+                        "latencia": 94.12,
+                        "decision": "INTERACT -> Core_Server_Omega",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ],
+                "latencia_promedio": 68.92
+            }
+        ],
+        "total_timeouts": 1,
+        "total_errores_chatarra_global": 1,
+        "total_errores_servidor_global": 1,
+        "latencia_promedio": 62.8245,
+        "latencia_maxima": 115.1,
+        "latencia_mediana": 77.68,
+        "latencia_minima": 1.31,
+        "duracion_promedio": 301.4364
+    }
+]
