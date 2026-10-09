@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Ruta al archivo JSON generado por Unity/FastAPI
-JSON_PATH = "./versiones/Voyager_Architecture_v2.json"
+JSON_PATH = "./versiones/Voyager_Architecture_v3.json"
 
 def cargar_datos():
     if not os.path.exists(JSON_PATH):

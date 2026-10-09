@@ -13,7 +13,7 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 KEV_URL = "http://127.0.0.1:8009/v1/systemone"
 
 MODEL_S1_FAST = "kev-0.8b"       # Sistema 1: Servidor Kev en puerto 8009
-MODEL_S2_PLAN = "llama3"     # Sistema 2: Servidor Ollama en puerto 11434
+MODEL_S2_PLAN = "llama3"     # Sistema 2: Servidor Ollama en puerto 11434 {qwen2.5:3b  qwen2.5:7b  llama3}
 ARCHITECTURE_TAG = f"Dual_{MODEL_S1_FAST}+{MODEL_S2_PLAN}"
 
 current_test_decisions = []
