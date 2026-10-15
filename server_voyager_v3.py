@@ -10,10 +10,10 @@ from typing import List
 from laya import Router
 
 # --- CONFIGURACIÓN DEL MOTOR DE DECISIÓN PURA ---
-DECISION_ENGINE = "LAYA"  # "LAYA" o "KEV"
+DECISION_ENGINE = "KEV"  # "LAYA" o "KEV"
 KEV_URL = "http://127.0.0.1:8009/v1/systemone"
 
-CONFIDENCE_THRESHOLD = 0.43
+CONFIDENCE_THRESHOLD = 0.15
 ARCHITECTURE_TAG = f"Pure_Decision_{DECISION_ENGINE}_Sequential_TH{CONFIDENCE_THRESHOLD}"
 
 current_test_decisions = []
