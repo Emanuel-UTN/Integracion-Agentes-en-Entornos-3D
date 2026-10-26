@@ -2995,17 +2995,59 @@
                     }
                 ],
                 "latencia_promedio": 2.995
+            },
+            {
+                "duracion_total": 50.01,
+                "supero_limite_tiempo": false,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "overrides_por_confianza": 1,
+                "decisiones": [
+                    {
+                        "pensamiento": "[KEV] Valid\u00f3 MainServer como \u00fatil. Quer\u00eda interactuar con Main_Server, pero su certeza (0.13) no super\u00f3 el umbral de 0.15. Acci\u00f3n forzada a EXPLORE.",
+                        "latencia": 6.67,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0,
+                        "anulado_por_baja_confianza": 1
+                    },
+                    {
+                        "pensamiento": "[KEV] Evalu\u00f3 Scrap como IN\u00daTIL (Certeza: 0.91). Retoma acci\u00f3n: EXPLORE.",
+                        "latencia": 2.64,
+                        "decision": "EXPLORE",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0,
+                        "anulado_por_baja_confianza": 0
+                    },
+                    {
+                        "pensamiento": "[KEV] Valid\u00f3 DataModule como \u00fatil. Decidi\u00f3 interactuar con Data_Alpha_01. (Certeza: 0.15)",
+                        "latencia": 7.49,
+                        "decision": "INTERACT -> Data_Alpha_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0,
+                        "anulado_por_baja_confianza": 0
+                    },
+                    {
+                        "pensamiento": "[KEV] Decidi\u00f3 interactuar con Main_Server. (Certeza: 0.33)",
+                        "latencia": 3.34,
+                        "decision": "INTERACT -> Main_Server",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0,
+                        "anulado_por_baja_confianza": 0
+                    }
+                ],
+                "latencia_promedio": 5.035
             }
         ],
         "total_timeouts": 0,
         "total_errores_chatarra_global": 0,
         "total_errores_servidor_global": 0,
-        "total_overrides_confianza_global": 9,
-        "latencia_promedio": 4.3878,
+        "total_overrides_confianza_global": 10,
+        "latencia_promedio": 4.4283,
         "latencia_maxima": 8.72,
         "latencia_mediana": 4.09,
         "latencia_minima": 0.0,
-        "duracion_promedio": 54.688
+        "duracion_promedio": 54.3956
     },
     {
         "modelo": "Pure_Decision_KEV_Sequential_TH0.2",

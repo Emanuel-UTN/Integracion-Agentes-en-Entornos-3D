@@ -6685,14 +6685,452 @@
                         "error_servidor_prematuro": 0
                     }
                 ]
+            },
+            {
+                "mision": "Mision_Estandar",
+                "nivel_compresion": "MINIMAL",
+                "duracion_total": 111.6,
+                "supero_limite_tiempo": false,
+                "pasos_totales": 53,
+                "tokens_promedio_por_paso": 56.58,
+                "tokens_totales_mision": 2999,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "latencia_promedio": 1.7862,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Q1-VistaLejana|66tok] Broken_robot_leg_01 -> USELESS",
+                        "latencia": 2.85,
+                        "tokens_entrada": 66,
+                        "decision": "SCAN:Broken_robot_leg_01=USELESS",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|62tok] TURN_AROUND (Conf:0.06)",
+                        "latencia": 2.4,
+                        "tokens_entrada": 62,
+                        "decision": "TURN_AROUND",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|59tok] Locked_door_01 -> USEFUL",
+                        "latencia": 2.51,
+                        "tokens_entrada": 59,
+                        "decision": "SCAN:Locked_door_01=USEFUL",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|51tok] TURN_RIGHT (Conf:0.12)",
+                        "latencia": 1.52,
+                        "tokens_entrada": 51,
+                        "decision": "TURN_RIGHT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|65tok] Main_server -> USEFUL",
+                        "latencia": 2.76,
+                        "tokens_entrada": 65,
+                        "decision": "SCAN:Main_server=USEFUL",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|60tok] Kaycard -> USEFUL",
+                        "latencia": 2.83,
+                        "tokens_entrada": 60,
+                        "decision": "SCAN:Kaycard=USEFUL",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|48tok] TURN_RIGHT (Conf:0.31)",
+                        "latencia": 2.44,
+                        "tokens_entrada": 48,
+                        "decision": "TURN_RIGHT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.47)",
+                        "latencia": 1.65,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] TURN_LEFT (Conf:0.22)",
+                        "latencia": 1.5,
+                        "tokens_entrada": 58,
+                        "decision": "TURN_LEFT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|48tok] MOVE_FORWARD (Conf:0.53)",
+                        "latencia": 1.68,
+                        "tokens_entrada": 48,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.45)",
+                        "latencia": 1.67,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|56tok] INTERACT:Kaycard (Conf:0.54)",
+                        "latencia": 1.57,
+                        "tokens_entrada": 56,
+                        "decision": "INTERACT:Kaycard",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] TURN_LEFT (Conf:0.25)",
+                        "latencia": 2.28,
+                        "tokens_entrada": 58,
+                        "decision": "TURN_LEFT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|48tok] MOVE_FORWARD (Conf:0.38)",
+                        "latencia": 1.41,
+                        "tokens_entrada": 48,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.32)",
+                        "latencia": 1.6,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.31)",
+                        "latencia": 1.54,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.31)",
+                        "latencia": 1.49,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.32)",
+                        "latencia": 1.71,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|48tok] TURN_LEFT (Conf:0.33)",
+                        "latencia": 1.4,
+                        "tokens_entrada": 48,
+                        "decision": "TURN_LEFT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|66tok] Broken_robot_arm_02 -> USELESS",
+                        "latencia": 2.66,
+                        "tokens_entrada": 66,
+                        "decision": "SCAN:Broken_robot_arm_02=USELESS",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|54tok] MOVE_FORWARD (Conf:0.45)",
+                        "latencia": 1.57,
+                        "tokens_entrada": 54,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|64tok] MOVE_FORWARD (Conf:0.35)",
+                        "latencia": 1.69,
+                        "tokens_entrada": 64,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] TURN_RIGHT (Conf:0.37)",
+                        "latencia": 1.5,
+                        "tokens_entrada": 58,
+                        "decision": "TURN_RIGHT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|49tok] INTERACT:Locked_door_01 (Conf:0.61)",
+                        "latencia": 1.42,
+                        "tokens_entrada": 49,
+                        "decision": "INTERACT:Locked_door_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|66tok] Broken_robot_arm_01 -> USELESS",
+                        "latencia": 1.4,
+                        "tokens_entrada": 66,
+                        "decision": "SCAN:Broken_robot_arm_01=USELESS",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|67tok] TURN_AROUND (Conf:0.12)",
+                        "latencia": 2.44,
+                        "tokens_entrada": 67,
+                        "decision": "TURN_AROUND",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|50tok] TURN_RIGHT (Conf:0.12)",
+                        "latencia": 1.51,
+                        "tokens_entrada": 50,
+                        "decision": "TURN_RIGHT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|58tok] Data_Module_01 -> USEFUL",
+                        "latencia": 2.66,
+                        "tokens_entrada": 58,
+                        "decision": "SCAN:Data_Module_01=USEFUL",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|48tok] TURN_RIGHT (Conf:0.41)",
+                        "latencia": 2.32,
+                        "tokens_entrada": 48,
+                        "decision": "TURN_RIGHT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.62)",
+                        "latencia": 1.64,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.62)",
+                        "latencia": 1.55,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] TURN_LEFT (Conf:0.35)",
+                        "latencia": 1.63,
+                        "tokens_entrada": 58,
+                        "decision": "TURN_LEFT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|48tok] MOVE_FORWARD (Conf:0.68)",
+                        "latencia": 1.6,
+                        "tokens_entrada": 48,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.62)",
+                        "latencia": 1.54,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.64)",
+                        "latencia": 1.61,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|65tok] INTERACT:Data_Module_01 (Conf:0.58)",
+                        "latencia": 1.83,
+                        "tokens_entrada": 65,
+                        "decision": "INTERACT:Data_Module_01",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|59tok] TURN_LEFT (Conf:0.40)",
+                        "latencia": 1.56,
+                        "tokens_entrada": 59,
+                        "decision": "TURN_LEFT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|49tok] MOVE_FORWARD (Conf:0.67)",
+                        "latencia": 1.53,
+                        "tokens_entrada": 49,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|49tok] TURN_LEFT (Conf:0.65)",
+                        "latencia": 1.45,
+                        "tokens_entrada": 49,
+                        "decision": "TURN_LEFT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|49tok] MOVE_FORWARD (Conf:0.67)",
+                        "latencia": 1.56,
+                        "tokens_entrada": 49,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|59tok] MOVE_FORWARD (Conf:0.59)",
+                        "latencia": 1.61,
+                        "tokens_entrada": 59,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|59tok] TURN_RIGHT (Conf:0.41)",
+                        "latencia": 1.63,
+                        "tokens_entrada": 59,
+                        "decision": "TURN_RIGHT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|49tok] MOVE_FORWARD (Conf:0.67)",
+                        "latencia": 1.55,
+                        "tokens_entrada": 49,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.60)",
+                        "latencia": 1.55,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.59)",
+                        "latencia": 1.61,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.60)",
+                        "latencia": 1.76,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.60)",
+                        "latencia": 1.63,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] TURN_LEFT (Conf:0.45)",
+                        "latencia": 1.64,
+                        "tokens_entrada": 58,
+                        "decision": "TURN_LEFT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|48tok] MOVE_FORWARD (Conf:0.66)",
+                        "latencia": 1.5,
+                        "tokens_entrada": 48,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.60)",
+                        "latencia": 1.76,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.58)",
+                        "latencia": 1.86,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|58tok] MOVE_FORWARD (Conf:0.60)",
+                        "latencia": 1.52,
+                        "tokens_entrada": 58,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|56tok] INTERACT:Main_server (Conf:0.72)",
+                        "latencia": 1.57,
+                        "tokens_entrada": 56,
+                        "decision": "INTERACT:Main_server",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ]
             }
         ],
         "total_timeouts": 0,
-        "tokens_promedio_global": 56.42,
-        "tokens_totales_promedio": 3042.9,
-        "latencia_promedio": 1.6081,
-        "latencia_mediana": 1.46,
-        "duracion_promedio": 103.4493
+        "tokens_promedio_global": 56.43,
+        "tokens_totales_promedio": 3040.1,
+        "latencia_promedio": 1.6191,
+        "latencia_mediana": 1.48,
+        "duracion_promedio": 103.9587
     },
     {
         "modelo": "Egocentric_KEV_ULTRA_MINIMAL_Mision_Estandar",
@@ -19684,5 +20122,192 @@
         "latencia_promedio": 2.3208,
         "latencia_mediana": 1.98,
         "duracion_promedio": 0
+    },
+    {
+        "modelo": "Egocentric_KEV_MINIMAL_Mision_Make_Stick",
+        "mision": "Mision_Make_Stick",
+        "nivel_compresion": "MINIMAL",
+        "pruebas": [
+            {
+                "mision": "Mision_Make_Stick",
+                "nivel_compresion": "MINIMAL",
+                "duracion_total": 50.14,
+                "supero_limite_tiempo": false,
+                "pasos_totales": 20,
+                "tokens_promedio_por_paso": 58.15,
+                "tokens_totales_mision": 1163,
+                "errores_interaccion_chatarra": 0,
+                "errores_servidor_prematuro": 0,
+                "latencia_promedio": 2.2575,
+                "decisiones": [
+                    {
+                        "pensamiento": "[Q1-VistaLejana|67tok] Broken_robot_leg_01 -> USELESS",
+                        "latencia": 2.79,
+                        "tokens_entrada": 67,
+                        "decision": "SCAN:Broken_robot_leg_01=USELESS",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|63tok] TURN_RIGHT (Conf:0.09)",
+                        "latencia": 1.96,
+                        "tokens_entrada": 63,
+                        "decision": "TURN_RIGHT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|67tok] Broken_robot_arm_02 -> USELESS",
+                        "latencia": 1.69,
+                        "tokens_entrada": 67,
+                        "decision": "SCAN:Broken_robot_arm_02=USELESS",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|61tok] Tree -> USEFUL",
+                        "latencia": 2.8,
+                        "tokens_entrada": 61,
+                        "decision": "SCAN:Tree=USEFUL",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|46tok] TURN_RIGHT (Conf:0.36)",
+                        "latencia": 2.35,
+                        "tokens_entrada": 46,
+                        "decision": "TURN_RIGHT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|60tok] Locked_door_01 -> USEFUL",
+                        "latencia": 2.78,
+                        "tokens_entrada": 60,
+                        "decision": "SCAN:Locked_door_01=USEFUL",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|35tok] MOVE_FORWARD (Conf:0.63)",
+                        "latencia": 1.53,
+                        "tokens_entrada": 35,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|56tok] MOVE_FORWARD (Conf:0.31)",
+                        "latencia": 1.99,
+                        "tokens_entrada": 56,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|56tok] TURN_LEFT (Conf:0.28)",
+                        "latencia": 2.12,
+                        "tokens_entrada": 56,
+                        "decision": "TURN_LEFT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|46tok] MOVE_FORWARD (Conf:0.40)",
+                        "latencia": 1.85,
+                        "tokens_entrada": 46,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|54tok] INTERACT:Tree (Conf:0.56)",
+                        "latencia": 1.72,
+                        "tokens_entrada": 54,
+                        "decision": "INTERACT:Tree",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|63tok] TURN_RIGHT (Conf:0.05)",
+                        "latencia": 2.8,
+                        "tokens_entrada": 63,
+                        "decision": "TURN_RIGHT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|53tok] TURN_AROUND (Conf:0.22)",
+                        "latencia": 1.69,
+                        "tokens_entrada": 53,
+                        "decision": "TURN_AROUND",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|61tok] Kaycard -> USEFUL",
+                        "latencia": 3.1,
+                        "tokens_entrada": 61,
+                        "decision": "SCAN:Kaycard=USEFUL",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|48tok] TURN_LEFT (Conf:0.21)",
+                        "latencia": 1.67,
+                        "tokens_entrada": 48,
+                        "decision": "TURN_LEFT",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|66tok] Main_server -> USEFUL",
+                        "latencia": 3.01,
+                        "tokens_entrada": 66,
+                        "decision": "SCAN:Main_server=USEFUL",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[Q1-VistaLejana|64tok] Crafting_table -> USEFUL",
+                        "latencia": 2.98,
+                        "tokens_entrada": 64,
+                        "decision": "SCAN:Crafting_table=USEFUL",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|67tok] MOVE_FORWARD (Conf:0.56)",
+                        "latencia": 1.99,
+                        "tokens_entrada": 67,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|66tok] MOVE_FORWARD (Conf:0.52)",
+                        "latencia": 2.39,
+                        "tokens_entrada": 66,
+                        "decision": "MOVE_FORWARD",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    },
+                    {
+                        "pensamiento": "[KEV|MINIMAL|64tok] INTERACT:Crafting_table (Conf:0.63)",
+                        "latencia": 1.94,
+                        "tokens_entrada": 64,
+                        "decision": "INTERACT:Crafting_table",
+                        "error_chatarra": 0,
+                        "error_servidor_prematuro": 0
+                    }
+                ]
+            }
+        ],
+        "total_timeouts": 0,
+        "tokens_promedio_global": 58.15,
+        "tokens_totales_promedio": 1163,
+        "latencia_promedio": 2.2575,
+        "latencia_mediana": 2.06,
+        "duracion_promedio": 50.14
     }
 ]

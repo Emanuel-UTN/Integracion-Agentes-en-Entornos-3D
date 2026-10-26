@@ -11,7 +11,7 @@ from laya import Router
 
 # --- CONFIGURACIÓN EXPERIMENTAL ---
 DECISION_ENGINE = "KEV"             # "LAYA" o "KEV"
-COMPRESSION_LEVEL = "VERBOSE"       # "VERBOSE", "COMPACT", "MINIMAL", "ULTRA_MINIMAL"
+COMPRESSION_LEVEL = "MINIMAL"       # "VERBOSE", "COMPACT", "MINIMAL", "ULTRA_MINIMAL"
 KEV_URL = "http://127.0.0.1:8009/v1/systemone"
 
 router = None
