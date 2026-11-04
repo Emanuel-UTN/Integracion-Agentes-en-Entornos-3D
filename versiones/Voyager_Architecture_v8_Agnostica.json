@@ -1,0 +1,1506 @@
+[
+    {
+        "modelo": "Agnostic_ReAct_V8_KEV",
+        "pruebas": [
+            {
+                "mision": "Mision_Activates_switches_in_order",
+                "duracion_total": 57.85,
+                "supero_limite_tiempo": false,
+                "pasos_totales": 21,
+                "tokens_promedio_por_paso": 122.38,
+                "latencia_promedio": 2.431,
+                "decisiones": [
+                    {
+                        "observacion": "OBSERVATION: Agent initialized at starting position.",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|85t] Obs: 'OBSERVATION: Agent initialized at starting position.' | Goal: EXPLORE(EXPLORE) -> Act: TURN_AROUND (Conf: 0.15)",
+                        "latencia": 1.48,
+                        "tokens_entrada": 85,
+                        "decision": "TURN_AROUND"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_AROUND. Spotted: Pump_switch(Pump switch), Valve_switch(Valve switch), Pressure_console(Pressure console).",
+                        "meta_activa": "Valve_switch(Valve switch)",
+                        "pensamiento": "[ReAct-V8|868t] Obs: 'OBSERVATION: Executed TURN_AROUND. Spotted: Pump_switch(Pump switch), Valve_switch(Valve switch), Pressure_console(Pressure console).' | Goal: Valve_switch(Valve switch) -> Act: MOVE_FORWARD (Conf: 0.18)",
+                        "latencia": 17.16,
+                        "tokens_entrada": 868,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-1).",
+                        "meta_activa": "Valve_switch(Valve switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (0,-1).' | Goal: Valve_switch(Valve switch) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.31,
+                        "tokens_entrada": 72,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-2).",
+                        "meta_activa": "Valve_switch(Valve switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (0,-2).' | Goal: Valve_switch(Valve switch) -> Act: MOVE_FORWARD (Conf: 0.16)",
+                        "latencia": 1.24,
+                        "tokens_entrada": 72,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-3).",
+                        "meta_activa": "Valve_switch(Valve switch)",
+                        "pensamiento": "[ReAct-V8|61t] Obs: 'OBSERVATION: Moved forward to grid (0,-3).' | Goal: Valve_switch(Valve switch) -> Act: TURN_RIGHT (Conf: 0.09)",
+                        "latencia": 1.15,
+                        "tokens_entrada": 61,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Valve_switch(Valve switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Valve_switch(Valve switch) -> Act: MOVE_FORWARD (Conf: 0.14)",
+                        "latencia": 1.28,
+                        "tokens_entrada": 72,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-3).",
+                        "meta_activa": "Valve_switch(Valve switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (-1,-3).' | Goal: Valve_switch(Valve switch) -> Act: TURN_LEFT (Conf: 0.12)",
+                        "latencia": 1.27,
+                        "tokens_entrada": 72,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Valve_switch(Valve switch)",
+                        "pensamiento": "[ReAct-V8|61t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: Valve_switch(Valve switch) -> Act: MOVE_FORWARD (Conf: 0.19)",
+                        "latencia": 1.17,
+                        "tokens_entrada": 61,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-4).",
+                        "meta_activa": "Valve_switch(Valve switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (-1,-4).' | Goal: Valve_switch(Valve switch) -> Act: TURN_RIGHT (Conf: 0.17)",
+                        "latencia": 1.26,
+                        "tokens_entrada": 72,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Valve_switch(Valve switch)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Valve_switch => INTERACT:Valve_switch",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Valve_switch"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Valve_switch (Valve switch) -> SUCCESS! Activated mechanism.",
+                        "meta_activa": "Pump_switch(Pump switch)",
+                        "pensamiento": "[ReAct-V8|297t] Obs: 'OBSERVATION: Interacted with Valve_switch (Valve switch) -> SUCCESS! Activated mechanism.' | Goal: Pump_switch(Pump switch) -> Act: TURN_RIGHT (Conf: 0.06)",
+                        "latencia": 6.88,
+                        "tokens_entrada": 297,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Pump_switch(Pump switch)",
+                        "pensamiento": "[ReAct-V8|61t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Pump_switch(Pump switch) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.12,
+                        "tokens_entrada": 61,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-3).",
+                        "meta_activa": "Pump_switch(Pump switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (-1,-3).' | Goal: Pump_switch(Pump switch) -> Act: TURN_RIGHT (Conf: 0.07)",
+                        "latencia": 1.27,
+                        "tokens_entrada": 72,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Pump_switch(Pump switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Pump_switch(Pump switch) -> Act: MOVE_FORWARD (Conf: 0.13)",
+                        "latencia": 1.24,
+                        "tokens_entrada": 72,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-3).",
+                        "meta_activa": "Pump_switch(Pump switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (0,-3).' | Goal: Pump_switch(Pump switch) -> Act: MOVE_FORWARD (Conf: 0.10)",
+                        "latencia": 1.41,
+                        "tokens_entrada": 72,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,-3).",
+                        "meta_activa": "Pump_switch(Pump switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (1,-3).' | Goal: Pump_switch(Pump switch) -> Act: TURN_RIGHT (Conf: 0.11)",
+                        "latencia": 1.25,
+                        "tokens_entrada": 72,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Pump_switch(Pump switch)",
+                        "pensamiento": "[ReAct-V8|61t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Pump_switch(Pump switch) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.15,
+                        "tokens_entrada": 61,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,-4).",
+                        "meta_activa": "Pump_switch(Pump switch)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (1,-4).' | Goal: Pump_switch(Pump switch) -> Act: TURN_LEFT (Conf: 0.06)",
+                        "latencia": 1.25,
+                        "tokens_entrada": 72,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Pump_switch(Pump switch)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Pump_switch => INTERACT:Pump_switch",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Pump_switch"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Pump_switch (Pump switch) -> SUCCESS! Activated mechanism.",
+                        "meta_activa": "Pressure_console(Pressure console)",
+                        "pensamiento": "[ReAct-V8|356t] Obs: 'OBSERVATION: Interacted with Pump_switch (Pump switch) -> SUCCESS! Activated mechanism.' | Goal: Pressure_console(Pressure console) -> Act: TURN_AROUND (Conf: 0.08)",
+                        "latencia": 8.16,
+                        "tokens_entrada": 356,
+                        "decision": "TURN_AROUND"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_AROUND.",
+                        "meta_activa": "Pressure_console(Pressure console)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Pressure_console => INTERACT:Pressure_console",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Pressure_console"
+                    }
+                ]
+            },
+            {
+                "mision": "Mision_Lexical_Hijacking_Test",
+                "duracion_total": 24.15,
+                "supero_limite_tiempo": false,
+                "pasos_totales": 4,
+                "tokens_promedio_por_paso": 277,
+                "latencia_promedio": 5.6475,
+                "decisiones": [
+                    {
+                        "observacion": "OBSERVATION: Agent initialized at starting position.",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|85t] Obs: 'OBSERVATION: Agent initialized at starting position.' | Goal: EXPLORE(EXPLORE) -> Act: TURN_AROUND (Conf: 0.15)",
+                        "latencia": 1.62,
+                        "tokens_entrada": 85,
+                        "decision": "TURN_AROUND"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_AROUND. Spotted: Wrench(Wrench), Gold_key(Gold key), Master_card(Master card).",
+                        "meta_activa": "Wrench(Wrench)",
+                        "pensamiento": "[ReAct-V8|952t] Obs: 'OBSERVATION: Executed TURN_AROUND. Spotted: Wrench(Wrench), Gold_key(Gold key), Master_card(Master card).' | Goal: Wrench(Wrench) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 19.69,
+                        "tokens_entrada": 952,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-1).",
+                        "meta_activa": "Wrench(Wrench)",
+                        "pensamiento": "[ReAct-V8|71t] Obs: 'OBSERVATION: Moved forward to grid (0,-1).' | Goal: Wrench(Wrench) -> Act: MOVE_FORWARD (Conf: 0.16)",
+                        "latencia": 1.28,
+                        "tokens_entrada": 71,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-2).",
+                        "meta_activa": "Wrench(Wrench)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Wrench => INTERACT:Wrench",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Wrench"
+                    }
+                ]
+            },
+            {
+                "mision": "Mision_Sequential_Depth_Test",
+                "duracion_total": 77.14,
+                "supero_limite_tiempo": false,
+                "pasos_totales": 32,
+                "tokens_promedio_por_paso": 102.47,
+                "latencia_promedio": 2.0625,
+                "decisiones": [
+                    {
+                        "observacion": "OBSERVATION: Agent initialized at starting position. Spotted: Central_reactor(Central reactor).",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|258t] Obs: 'OBSERVATION: Agent initialized at starting position. Spotted: Central_reactor(Central reactor).' | Goal: EXPLORE(EXPLORE) -> Act: TURN_AROUND (Conf: 0.15)",
+                        "latencia": 5.83,
+                        "tokens_entrada": 258,
+                        "decision": "TURN_AROUND"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_AROUND. Spotted: Fuel_tank(Fuel tank), Ignition_key(Ignition key).",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|669t] Obs: 'OBSERVATION: Executed TURN_AROUND. Spotted: Fuel_tank(Fuel tank), Ignition_key(Ignition key).' | Goal: Fuel_tank(Fuel tank) -> Act: MOVE_FORWARD (Conf: 0.14)",
+                        "latencia": 13.78,
+                        "tokens_entrada": 669,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-1).",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-1).' | Goal: Fuel_tank(Fuel tank) -> Act: MOVE_FORWARD (Conf: 0.16)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-2).",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-2).' | Goal: Fuel_tank(Fuel tank) -> Act: MOVE_FORWARD (Conf: 0.14)",
+                        "latencia": 1.35,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-3).",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-3).' | Goal: Fuel_tank(Fuel tank) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.35,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-4).",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-4).' | Goal: Fuel_tank(Fuel tank) -> Act: MOVE_FORWARD (Conf: 0.16)",
+                        "latencia": 1.34,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5).",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-5).' | Goal: Fuel_tank(Fuel tank) -> Act: TURN_LEFT (Conf: 0.07)",
+                        "latencia": 1.37,
+                        "tokens_entrada": 74,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|63t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: Fuel_tank(Fuel tank) -> Act: MOVE_FORWARD (Conf: 0.16)",
+                        "latencia": 1.24,
+                        "tokens_entrada": 63,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,-5).",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (1,-5).' | Goal: Fuel_tank(Fuel tank) -> Act: MOVE_FORWARD (Conf: 0.14)",
+                        "latencia": 1.33,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (2,-5).",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (2,-5).' | Goal: Fuel_tank(Fuel tank) -> Act: MOVE_FORWARD (Conf: 0.13)",
+                        "latencia": 1.3,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-5).",
+                        "meta_activa": "Fuel_tank(Fuel tank)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Fuel_tank => INTERACT:Fuel_tank",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Fuel_tank"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Fuel_tank (Fuel tank) -> SUCCESS! Collected 'Fuel cell'.",
+                        "meta_activa": "Ignition_key(Ignition key)",
+                        "pensamiento": "[ReAct-V8|258t] Obs: 'OBSERVATION: Interacted with Fuel_tank (Fuel tank) -> SUCCESS! Collected 'Fuel cell'.' | Goal: Ignition_key(Ignition key) -> Act: TURN_AROUND (Conf: 0.16)",
+                        "latencia": 6.22,
+                        "tokens_entrada": 258,
+                        "decision": "TURN_AROUND"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_AROUND.",
+                        "meta_activa": "Ignition_key(Ignition key)",
+                        "pensamiento": "[ReAct-V8|62t] Obs: 'OBSERVATION: Executed TURN_AROUND.' | Goal: Ignition_key(Ignition key) -> Act: MOVE_FORWARD (Conf: 0.13)",
+                        "latencia": 1.24,
+                        "tokens_entrada": 62,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (2,-5).",
+                        "meta_activa": "Ignition_key(Ignition key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (2,-5).' | Goal: Ignition_key(Ignition key) -> Act: MOVE_FORWARD (Conf: 0.14)",
+                        "latencia": 1.28,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,-5).",
+                        "meta_activa": "Ignition_key(Ignition key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (1,-5).' | Goal: Ignition_key(Ignition key) -> Act: MOVE_FORWARD (Conf: 0.14)",
+                        "latencia": 1.32,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5).",
+                        "meta_activa": "Ignition_key(Ignition key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-5).' | Goal: Ignition_key(Ignition key) -> Act: MOVE_FORWARD (Conf: 0.13)",
+                        "latencia": 1.25,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-5).",
+                        "meta_activa": "Ignition_key(Ignition key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-1,-5).' | Goal: Ignition_key(Ignition key) -> Act: MOVE_FORWARD (Conf: 0.13)",
+                        "latencia": 1.46,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-5).",
+                        "meta_activa": "Ignition_key(Ignition key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-2,-5).' | Goal: Ignition_key(Ignition key) -> Act: MOVE_FORWARD (Conf: 0.14)",
+                        "latencia": 1.3,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-5).",
+                        "meta_activa": "Ignition_key(Ignition key)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Ignition_key => INTERACT:Ignition_key",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Ignition_key"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Ignition_key (Ignition key) -> SUCCESS! Collected 'Ignition key'.",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|299t] Obs: 'OBSERVATION: Interacted with Ignition_key (Ignition key) -> SUCCESS! Collected 'Ignition key'.' | Goal: Central_reactor(Central reactor) -> Act: TURN_RIGHT (Conf: 0.12)",
+                        "latencia": 6.78,
+                        "tokens_entrada": 299,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|64t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.38,
+                        "tokens_entrada": 64,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-4).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-3,-4).' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.42,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-3).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-3,-3).' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.39,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-2).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-3,-2).' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.31,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-1).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-3,-1).' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.33,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,0).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-3,0).' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.36,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,1).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-3,1).' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.35,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,2).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-3,2).' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.16)",
+                        "latencia": 1.41,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,3).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|63t] Obs: 'OBSERVATION: Moved forward to grid (-3,3).' | Goal: Central_reactor(Central reactor) -> Act: TURN_RIGHT (Conf: 0.06)",
+                        "latencia": 1.31,
+                        "tokens_entrada": 63,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|63t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.28,
+                        "tokens_entrada": 63,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,3).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-2,3).' | Goal: Central_reactor(Central reactor) -> Act: MOVE_FORWARD (Conf: 0.24)",
+                        "latencia": 1.43,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,3).",
+                        "meta_activa": "Central_reactor(Central reactor)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Central_reactor => INTERACT:Central_reactor",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Central_reactor"
+                    }
+                ]
+            },
+            {
+                "mision": "Mision_Receptaculos",
+                "duracion_total": 234.99,
+                "supero_limite_tiempo": false,
+                "pasos_totales": 78,
+                "tokens_promedio_por_paso": 143.71,
+                "latencia_promedio": 2.6856,
+                "decisiones": [
+                    {
+                        "observacion": "OBSERVATION: Agent initialized at starting position. Spotted: Circuit(Circuit).",
+                        "meta_activa": "Circuit(Circuit)",
+                        "pensamiento": "[ReAct-V8|242t] Obs: 'OBSERVATION: Agent initialized at starting position. Spotted: Circuit(Circuit).' | Goal: Circuit(Circuit) -> Act: MOVE_FORWARD (Conf: 0.18)",
+                        "latencia": 5.52,
+                        "tokens_entrada": 242,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,1).",
+                        "meta_activa": "Circuit(Circuit)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Circuit => INTERACT:Circuit",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Circuit"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Circuit (Circuit) -> SUCCESS! Collected 'Circuit'.",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|85t] Obs: 'OBSERVATION: Interacted with Circuit (Circuit) -> SUCCESS! Collected 'Circuit'.' | Goal: EXPLORE(EXPLORE) -> Act: TURN_AROUND (Conf: 0.12)",
+                        "latencia": 1.6,
+                        "tokens_entrada": 85,
+                        "decision": "TURN_AROUND"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_AROUND. Spotted: Slot_Protection(Slot Protection), Slot_Logic(Slot Logic), Slot_Energy(Slot Energy), PC(PC), Battery(Battery).",
+                        "meta_activa": "Slot_Logic(Slot Logic)",
+                        "pensamiento": "[ReAct-V8|1283t] Obs: 'OBSERVATION: Executed TURN_AROUND. Spotted: Slot_Protection(Slot Protection), Slot_Logic(Slot Logic), Slot_Energy(Slot Energy), PC(PC), Battery(Battery).' | Goal: Slot_Logic(Slot Logic) -> Act: MOVE_FORWARD (Conf: 0.10)",
+                        "latencia": 26.52,
+                        "tokens_entrada": 1283,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,0).",
+                        "meta_activa": "Slot_Logic(Slot Logic)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,0).' | Goal: Slot_Logic(Slot Logic) -> Act: MOVE_FORWARD (Conf: 0.09)",
+                        "latencia": 1.27,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-1).",
+                        "meta_activa": "Slot_Logic(Slot Logic)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-1).' | Goal: Slot_Logic(Slot Logic) -> Act: MOVE_FORWARD (Conf: 0.10)",
+                        "latencia": 1.32,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-2).",
+                        "meta_activa": "Slot_Logic(Slot Logic)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-2).' | Goal: Slot_Logic(Slot Logic) -> Act: MOVE_FORWARD (Conf: 0.10)",
+                        "latencia": 1.28,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-3).",
+                        "meta_activa": "Slot_Logic(Slot Logic)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-3).' | Goal: Slot_Logic(Slot Logic) -> Act: MOVE_FORWARD (Conf: 0.09)",
+                        "latencia": 1.32,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-4).",
+                        "meta_activa": "Slot_Logic(Slot Logic)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-4).' | Goal: Slot_Logic(Slot Logic) -> Act: MOVE_FORWARD (Conf: 0.08)",
+                        "latencia": 1.34,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5).",
+                        "meta_activa": "Slot_Logic(Slot Logic)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-5).' | Goal: Slot_Logic(Slot Logic) -> Act: MOVE_FORWARD (Conf: 0.12)",
+                        "latencia": 1.28,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-6).",
+                        "meta_activa": "Slot_Logic(Slot Logic)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-6).' | Goal: Slot_Logic(Slot Logic) -> Act: TURN_LEFT (Conf: 0.09)",
+                        "latencia": 1.3,
+                        "tokens_entrada": 74,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Slot_Logic(Slot Logic)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Slot_Logic => INTERACT:Slot_Logic",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Slot_Logic"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Slot_Logic (Slot Logic) -> SUCCESS! Deposited required item.",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|789t] Obs: 'OBSERVATION: Interacted with Slot_Logic (Slot Logic) -> SUCCESS! Deposited required item.' | Goal: Slot_Energy(Slot Energy) -> Act: TURN_LEFT (Conf: 0.03)",
+                        "latencia": 15.28,
+                        "tokens_entrada": 789,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|63t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: Slot_Energy(Slot Energy) -> Act: MOVE_FORWARD (Conf: 0.10)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 63,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5). Spotted: Fuse(Fuse).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|1012t] Obs: 'OBSERVATION: Moved forward to grid (0,-5). Spotted: Fuse(Fuse).' | Goal: Fuse(Fuse) -> Act: MOVE_FORWARD (Conf: 0.14)",
+                        "latencia": 18.17,
+                        "tokens_entrada": 1012,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-4).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,-4).' | Goal: Fuse(Fuse) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.2,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-3).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,-3).' | Goal: Fuse(Fuse) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.32,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-2).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,-2).' | Goal: Fuse(Fuse) -> Act: MOVE_FORWARD (Conf: 0.14)",
+                        "latencia": 1.25,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-1).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,-1).' | Goal: Fuse(Fuse) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.33,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,0).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,0).' | Goal: Fuse(Fuse) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,1).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,1).' | Goal: Fuse(Fuse) -> Act: TURN_RIGHT (Conf: 0.10)",
+                        "latencia": 1.32,
+                        "tokens_entrada": 68,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|57t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Fuse(Fuse) -> Act: MOVE_FORWARD (Conf: 0.18)",
+                        "latencia": 1.16,
+                        "tokens_entrada": 57,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,1).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (1,1).' | Goal: Fuse(Fuse) -> Act: MOVE_FORWARD (Conf: 0.13)",
+                        "latencia": 1.23,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (2,1).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (2,1).' | Goal: Fuse(Fuse) -> Act: MOVE_FORWARD (Conf: 0.26)",
+                        "latencia": 1.27,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,1).",
+                        "meta_activa": "Fuse(Fuse)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Fuse => INTERACT:Fuse",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Fuse"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Fuse (Fuse) -> SUCCESS! Collected 'Fuse'.",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|805t] Obs: 'OBSERVATION: Interacted with Fuse (Fuse) -> SUCCESS! Collected 'Fuse'.' | Goal: Slot_Protection(Slot Protection) -> Act: TURN_RIGHT (Conf: 0.07)",
+                        "latencia": 15.48,
+                        "tokens_entrada": 805,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|67t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.02)",
+                        "latencia": 1.25,
+                        "tokens_entrada": 67,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,0).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Moved forward to grid (3,0).' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.42,
+                        "tokens_entrada": 77,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-1).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Moved forward to grid (3,-1).' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.39,
+                        "tokens_entrada": 77,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-2).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Moved forward to grid (3,-2).' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.06)",
+                        "latencia": 1.45,
+                        "tokens_entrada": 77,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-3).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Moved forward to grid (3,-3).' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.03)",
+                        "latencia": 1.38,
+                        "tokens_entrada": 77,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-4).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Moved forward to grid (3,-4).' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.05)",
+                        "latencia": 1.4,
+                        "tokens_entrada": 77,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-5).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|66t] Obs: 'OBSERVATION: Moved forward to grid (3,-5).' | Goal: Slot_Protection(Slot Protection) -> Act: TURN_RIGHT (Conf: 0.02)",
+                        "latencia": 1.25,
+                        "tokens_entrada": 66,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.39,
+                        "tokens_entrada": 77,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (2,-5).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Moved forward to grid (2,-5).' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.38,
+                        "tokens_entrada": 77,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,-5).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Moved forward to grid (1,-5).' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.03)",
+                        "latencia": 1.45,
+                        "tokens_entrada": 77,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Moved forward to grid (0,-5).' | Goal: Slot_Protection(Slot Protection) -> Act: TURN_LEFT (Conf: 0.09)",
+                        "latencia": 1.44,
+                        "tokens_entrada": 77,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: Slot_Protection(Slot Protection) -> Act: MOVE_FORWARD (Conf: 0.03)",
+                        "latencia": 1.42,
+                        "tokens_entrada": 77,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-6).",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|77t] Obs: 'OBSERVATION: Moved forward to grid (0,-6).' | Goal: Slot_Protection(Slot Protection) -> Act: TURN_RIGHT (Conf: 0.09)",
+                        "latencia": 1.46,
+                        "tokens_entrada": 77,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Slot_Protection(Slot Protection)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Slot_Protection => INTERACT:Slot_Protection",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Slot_Protection"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Slot_Protection (Slot Protection) -> SUCCESS! Deposited required item.",
+                        "meta_activa": "Battery(Battery)",
+                        "pensamiento": "[ReAct-V8|951t] Obs: 'OBSERVATION: Interacted with Slot_Protection (Slot Protection) -> SUCCESS! Deposited required item.' | Goal: Battery(Battery) -> Act: TURN_RIGHT (Conf: 0.04)",
+                        "latencia": 17.17,
+                        "tokens_entrada": 951,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Battery(Battery)",
+                        "pensamiento": "[ReAct-V8|57t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Battery(Battery) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.16,
+                        "tokens_entrada": 57,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5).",
+                        "meta_activa": "Battery(Battery)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,-5).' | Goal: Battery(Battery) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-4).",
+                        "meta_activa": "Battery(Battery)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,-4).' | Goal: Battery(Battery) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.34,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-3).",
+                        "meta_activa": "Battery(Battery)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,-3).' | Goal: Battery(Battery) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-2).",
+                        "meta_activa": "Battery(Battery)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,-2).' | Goal: Battery(Battery) -> Act: TURN_LEFT (Conf: 0.07)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 68,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Battery(Battery)",
+                        "pensamiento": "[ReAct-V8|57t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: Battery(Battery) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.14,
+                        "tokens_entrada": 57,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-2).",
+                        "meta_activa": "Battery(Battery)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-1,-2).' | Goal: Battery(Battery) -> Act: MOVE_FORWARD (Conf: 0.13)",
+                        "latencia": 1.27,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-2).",
+                        "meta_activa": "Battery(Battery)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Battery => INTERACT:Battery",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Battery"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Battery (Battery) -> SUCCESS! Collected 'Battery'.",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|928t] Obs: 'OBSERVATION: Interacted with Battery (Battery) -> SUCCESS! Collected 'Battery'.' | Goal: PC(PC) -> Act: TURN_LEFT (Conf: 0.04)",
+                        "latencia": 16.26,
+                        "tokens_entrada": 928,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|57t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.20)",
+                        "latencia": 1.16,
+                        "tokens_entrada": 57,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-3).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-2,-3).' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.26,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-4).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-2,-4).' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.26,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-5).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-2,-5).' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.21)",
+                        "latencia": 1.24,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-6).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-2,-6).' | Goal: PC(PC) -> Act: TURN_RIGHT (Conf: 0.20)",
+                        "latencia": 1.31,
+                        "tokens_entrada": 68,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: PC => INTERACT:PC",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:PC"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with PC (PC) -> FAILED! Missing required condition (PC. Requires: Battery, cirucit and fuse must be stored. Effect: Turn on the PC.).",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|52t] Obs: 'OBSERVATION: Interacted with PC (PC) -> FAILED! Missing required condition (PC. Requires: Battery, cirucit and fuse must be stored. Effect: Turn on the PC.).' | Goal: Slot_Energy(Slot Energy) -> Act: TURN_RIGHT (Conf: 0.13)",
+                        "latencia": 2.0,
+                        "tokens_entrada": 52,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|62t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Slot_Energy(Slot Energy) -> Act: MOVE_FORWARD (Conf: 0.08)",
+                        "latencia": 1.19,
+                        "tokens_entrada": 62,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-5).",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-2,-5).' | Goal: Slot_Energy(Slot Energy) -> Act: TURN_RIGHT (Conf: 0.07)",
+                        "latencia": 1.35,
+                        "tokens_entrada": 74,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|63t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Slot_Energy(Slot Energy) -> Act: MOVE_FORWARD (Conf: 0.11)",
+                        "latencia": 1.17,
+                        "tokens_entrada": 63,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-5).",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-1,-5).' | Goal: Slot_Energy(Slot Energy) -> Act: MOVE_FORWARD (Conf: 0.10)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5).",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-5).' | Goal: Slot_Energy(Slot Energy) -> Act: MOVE_FORWARD (Conf: 0.09)",
+                        "latencia": 1.3,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,-5).",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (1,-5).' | Goal: Slot_Energy(Slot Energy) -> Act: MOVE_FORWARD (Conf: 0.08)",
+                        "latencia": 1.32,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (2,-5).",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (2,-5).' | Goal: Slot_Energy(Slot Energy) -> Act: TURN_RIGHT (Conf: 0.08)",
+                        "latencia": 1.31,
+                        "tokens_entrada": 74,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|63t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Slot_Energy(Slot Energy) -> Act: MOVE_FORWARD (Conf: 0.09)",
+                        "latencia": 1.2,
+                        "tokens_entrada": 63,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (2,-6).",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (2,-6).' | Goal: Slot_Energy(Slot Energy) -> Act: TURN_LEFT (Conf: 0.07)",
+                        "latencia": 1.34,
+                        "tokens_entrada": 74,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Slot_Energy(Slot Energy)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Slot_Energy => INTERACT:Slot_Energy",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Slot_Energy"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Slot_Energy (Slot Energy) -> SUCCESS! Deposited required item.",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|906t] Obs: 'OBSERVATION: Interacted with Slot_Energy (Slot Energy) -> SUCCESS! Deposited required item.' | Goal: PC(PC) -> Act: TURN_LEFT (Conf: 0.10)",
+                        "latencia": 13.79,
+                        "tokens_entrada": 906,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|57t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.18)",
+                        "latencia": 1.13,
+                        "tokens_entrada": 57,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (2,-5).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (2,-5).' | Goal: PC(PC) -> Act: TURN_LEFT (Conf: 0.04)",
+                        "latencia": 1.26,
+                        "tokens_entrada": 68,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|57t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.19)",
+                        "latencia": 1.14,
+                        "tokens_entrada": 57,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,-5).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (1,-5).' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.18)",
+                        "latencia": 1.26,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (0,-5).' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-5).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-1,-5).' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.36,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-5).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-2,-5).' | Goal: PC(PC) -> Act: TURN_LEFT (Conf: 0.05)",
+                        "latencia": 1.34,
+                        "tokens_entrada": 68,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|57t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: PC(PC) -> Act: MOVE_FORWARD (Conf: 0.23)",
+                        "latencia": 1.34,
+                        "tokens_entrada": 57,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-6).",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-2,-6).' | Goal: PC(PC) -> Act: TURN_RIGHT (Conf: 0.20)",
+                        "latencia": 1.24,
+                        "tokens_entrada": 68,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "PC(PC)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: PC => INTERACT:PC",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:PC"
+                    }
+                ]
+            },
+            {
+                "mision": "Mision_Sequential_Depth_Test",
+                "duracion_total": 108.93,
+                "supero_limite_tiempo": false,
+                "pasos_totales": 46,
+                "tokens_promedio_por_paso": 101.74,
+                "latencia_promedio": 2.0287,
+                "decisiones": [
+                    {
+                        "observacion": "OBSERVATION: Agent initialized at starting position.",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|85t] Obs: 'OBSERVATION: Agent initialized at starting position.' | Goal: EXPLORE(EXPLORE) -> Act: TURN_AROUND (Conf: 0.15)",
+                        "latencia": 2.75,
+                        "tokens_entrada": 85,
+                        "decision": "TURN_AROUND"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_AROUND. Spotted: Vault(Vault), Rusty_key(Rusty key), Antique_chest(Antique chest).",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|891t] Obs: 'OBSERVATION: Executed TURN_AROUND. Spotted: Vault(Vault), Rusty_key(Rusty key), Antique_chest(Antique chest).' | Goal: Rusty_key(Rusty key) -> Act: MOVE_FORWARD (Conf: 0.18)",
+                        "latencia": 19.32,
+                        "tokens_entrada": 891,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-1).",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-1).' | Goal: Rusty_key(Rusty key) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.19,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-2).",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-2).' | Goal: Rusty_key(Rusty key) -> Act: MOVE_FORWARD (Conf: 0.16)",
+                        "latencia": 1.24,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-3).",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-3).' | Goal: Rusty_key(Rusty key) -> Act: MOVE_FORWARD (Conf: 0.18)",
+                        "latencia": 1.26,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-4).",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (0,-4).' | Goal: Rusty_key(Rusty key) -> Act: MOVE_FORWARD (Conf: 0.18)",
+                        "latencia": 1.25,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5).",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|63t] Obs: 'OBSERVATION: Moved forward to grid (0,-5).' | Goal: Rusty_key(Rusty key) -> Act: TURN_RIGHT (Conf: 0.15)",
+                        "latencia": 1.18,
+                        "tokens_entrada": 63,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Rusty_key(Rusty key) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.31,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-5).",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-1,-5).' | Goal: Rusty_key(Rusty key) -> Act: MOVE_FORWARD (Conf: 0.15)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-5).",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|74t] Obs: 'OBSERVATION: Moved forward to grid (-2,-5).' | Goal: Rusty_key(Rusty key) -> Act: MOVE_FORWARD (Conf: 0.17)",
+                        "latencia": 1.21,
+                        "tokens_entrada": 74,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-5).",
+                        "meta_activa": "Rusty_key(Rusty key)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Rusty_key => INTERACT:Rusty_key",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Rusty_key"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Rusty_key (Rusty key) -> SUCCESS! Collected 'Rusty key'.",
+                        "meta_activa": "Antique_chest(Antique chest)",
+                        "pensamiento": "[ReAct-V8|188t] Obs: 'OBSERVATION: Interacted with Rusty_key (Rusty key) -> SUCCESS! Collected 'Rusty key'.' | Goal: Antique_chest(Antique chest) -> Act: TURN_AROUND (Conf: 0.08)",
+                        "latencia": 4.99,
+                        "tokens_entrada": 188,
+                        "decision": "TURN_AROUND"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_AROUND.",
+                        "meta_activa": "Antique_chest(Antique chest)",
+                        "pensamiento": "[ReAct-V8|63t] Obs: 'OBSERVATION: Executed TURN_AROUND.' | Goal: Antique_chest(Antique chest) -> Act: MOVE_FORWARD (Conf: 0.08)",
+                        "latencia": 1.19,
+                        "tokens_entrada": 63,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-5).",
+                        "meta_activa": "Antique_chest(Antique chest)",
+                        "pensamiento": "[ReAct-V8|75t] Obs: 'OBSERVATION: Moved forward to grid (-2,-5).' | Goal: Antique_chest(Antique chest) -> Act: MOVE_FORWARD (Conf: 0.07)",
+                        "latencia": 1.26,
+                        "tokens_entrada": 75,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-5).",
+                        "meta_activa": "Antique_chest(Antique chest)",
+                        "pensamiento": "[ReAct-V8|75t] Obs: 'OBSERVATION: Moved forward to grid (-1,-5).' | Goal: Antique_chest(Antique chest) -> Act: MOVE_FORWARD (Conf: 0.07)",
+                        "latencia": 1.27,
+                        "tokens_entrada": 75,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,-5).",
+                        "meta_activa": "Antique_chest(Antique chest)",
+                        "pensamiento": "[ReAct-V8|75t] Obs: 'OBSERVATION: Moved forward to grid (0,-5).' | Goal: Antique_chest(Antique chest) -> Act: MOVE_FORWARD (Conf: 0.05)",
+                        "latencia": 1.27,
+                        "tokens_entrada": 75,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,-5).",
+                        "meta_activa": "Antique_chest(Antique chest)",
+                        "pensamiento": "[ReAct-V8|75t] Obs: 'OBSERVATION: Moved forward to grid (1,-5).' | Goal: Antique_chest(Antique chest) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.25,
+                        "tokens_entrada": 75,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (2,-5).",
+                        "meta_activa": "Antique_chest(Antique chest)",
+                        "pensamiento": "[ReAct-V8|75t] Obs: 'OBSERVATION: Moved forward to grid (2,-5).' | Goal: Antique_chest(Antique chest) -> Act: MOVE_FORWARD (Conf: 0.08)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 75,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-5).",
+                        "meta_activa": "Antique_chest(Antique chest)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Antique_chest => INTERACT:Antique_chest",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Antique_chest"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Antique_chest (Antique chest) -> SUCCESS! Activated mechanism.",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|229t] Obs: 'OBSERVATION: Interacted with Antique_chest (Antique chest) -> SUCCESS! Activated mechanism.' | Goal: EXPLORE(EXPLORE) -> Act: TURN_LEFT (Conf: 0.32)",
+                        "latencia": 5.36,
+                        "tokens_entrada": 229,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|59t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: EXPLORE(EXPLORE) -> Act: MOVE_FORWARD (Conf: 0.55)",
+                        "latencia": 1.16,
+                        "tokens_entrada": 59,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-4).",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (3,-4).' | Goal: EXPLORE(EXPLORE) -> Act: MOVE_FORWARD (Conf: 0.26)",
+                        "latencia": 1.31,
+                        "tokens_entrada": 72,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-3).",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (3,-3).' | Goal: EXPLORE(EXPLORE) -> Act: MOVE_FORWARD (Conf: 0.29)",
+                        "latencia": 1.3,
+                        "tokens_entrada": 72,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-2).",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (3,-2).' | Goal: EXPLORE(EXPLORE) -> Act: MOVE_FORWARD (Conf: 0.28)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 72,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,-1).",
+                        "meta_activa": "EXPLORE(EXPLORE)",
+                        "pensamiento": "[ReAct-V8|72t] Obs: 'OBSERVATION: Moved forward to grid (3,-1).' | Goal: EXPLORE(EXPLORE) -> Act: TURN_LEFT (Conf: 0.39)",
+                        "latencia": 1.32,
+                        "tokens_entrada": 72,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT. Spotted: Security_terminal(Security terminal).",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|523t] Obs: 'OBSERVATION: Executed TURN_LEFT. Spotted: Security_terminal(Security terminal).' | Goal: Security_terminal(Security terminal) -> Act: TURN_RIGHT (Conf: 0.04)",
+                        "latencia": 9.97,
+                        "tokens_entrada": 523,
+                        "decision": "TURN_RIGHT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_RIGHT.",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|71t] Obs: 'OBSERVATION: Executed TURN_RIGHT.' | Goal: Security_terminal(Security terminal) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.28,
+                        "tokens_entrada": 71,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (3,0).",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|71t] Obs: 'OBSERVATION: Moved forward to grid (3,0).' | Goal: Security_terminal(Security terminal) -> Act: TURN_LEFT (Conf: 0.02)",
+                        "latencia": 1.23,
+                        "tokens_entrada": 71,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|71t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: Security_terminal(Security terminal) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.25,
+                        "tokens_entrada": 71,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (2,0).",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|71t] Obs: 'OBSERVATION: Moved forward to grid (2,0).' | Goal: Security_terminal(Security terminal) -> Act: MOVE_FORWARD (Conf: 0.05)",
+                        "latencia": 1.24,
+                        "tokens_entrada": 71,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (1,0).",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|71t] Obs: 'OBSERVATION: Moved forward to grid (1,0).' | Goal: Security_terminal(Security terminal) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.28,
+                        "tokens_entrada": 71,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (0,0).",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|71t] Obs: 'OBSERVATION: Moved forward to grid (0,0).' | Goal: Security_terminal(Security terminal) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.28,
+                        "tokens_entrada": 71,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,0).",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|71t] Obs: 'OBSERVATION: Moved forward to grid (-1,0).' | Goal: Security_terminal(Security terminal) -> Act: MOVE_FORWARD (Conf: 0.03)",
+                        "latencia": 1.31,
+                        "tokens_entrada": 71,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,0).",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|71t] Obs: 'OBSERVATION: Moved forward to grid (-2,0).' | Goal: Security_terminal(Security terminal) -> Act: MOVE_FORWARD (Conf: 0.07)",
+                        "latencia": 1.27,
+                        "tokens_entrada": 71,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,0).",
+                        "meta_activa": "Security_terminal(Security terminal)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Security_terminal => INTERACT:Security_terminal",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Security_terminal"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Interacted with Security_terminal (Security terminal) -> SUCCESS! Collected 'Encrypted code'.",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|240t] Obs: 'OBSERVATION: Interacted with Security_terminal (Security terminal) -> SUCCESS! Collected 'Encrypted code'.' | Goal: Vault(Vault) -> Act: TURN_LEFT (Conf: 0.10)",
+                        "latencia": 5.5,
+                        "tokens_entrada": 240,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|57t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: Vault(Vault) -> Act: MOVE_FORWARD (Conf: 0.11)",
+                        "latencia": 1.13,
+                        "tokens_entrada": 57,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-1).",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-3,-1).' | Goal: Vault(Vault) -> Act: MOVE_FORWARD (Conf: 0.12)",
+                        "latencia": 1.23,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-2).",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-3,-2).' | Goal: Vault(Vault) -> Act: MOVE_FORWARD (Conf: 0.12)",
+                        "latencia": 1.22,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-3).",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-3,-3).' | Goal: Vault(Vault) -> Act: MOVE_FORWARD (Conf: 0.13)",
+                        "latencia": 1.31,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-4).",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-3,-4).' | Goal: Vault(Vault) -> Act: MOVE_FORWARD (Conf: 0.12)",
+                        "latencia": 1.24,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-5).",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-3,-5).' | Goal: Vault(Vault) -> Act: MOVE_FORWARD (Conf: 0.09)",
+                        "latencia": 1.22,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-3,-6).",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-3,-6).' | Goal: Vault(Vault) -> Act: TURN_LEFT (Conf: 0.03)",
+                        "latencia": 1.48,
+                        "tokens_entrada": 68,
+                        "decision": "TURN_LEFT"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Executed TURN_LEFT.",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|57t] Obs: 'OBSERVATION: Executed TURN_LEFT.' | Goal: Vault(Vault) -> Act: MOVE_FORWARD (Conf: 0.04)",
+                        "latencia": 1.29,
+                        "tokens_entrada": 57,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-2,-6).",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|68t] Obs: 'OBSERVATION: Moved forward to grid (-2,-6).' | Goal: Vault(Vault) -> Act: MOVE_FORWARD (Conf: 0.26)",
+                        "latencia": 1.33,
+                        "tokens_entrada": 68,
+                        "decision": "MOVE_FORWARD"
+                    },
+                    {
+                        "observacion": "OBSERVATION: Moved forward to grid (-1,-6).",
+                        "meta_activa": "Vault(Vault)",
+                        "pensamiento": "[ReAct-V8|0t] Target Reached: Vault => INTERACT:Vault",
+                        "latencia": 0.0,
+                        "tokens_entrada": 0,
+                        "decision": "INTERACT:Vault"
+                    }
+                ]
+            }
+        ],
+        "total_timeouts": 0
+    }
+]

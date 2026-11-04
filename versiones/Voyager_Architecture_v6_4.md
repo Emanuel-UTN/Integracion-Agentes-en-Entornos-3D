@@ -35,9 +35,11 @@ El ciclo de ejecución en cada paso sigue la siguiente secuencia:
                      ┌──────────────────────────┴──────────────────────────┐
                      ▼ SÍ                                                  ▼ NO
           [Q1: Percepción Semántica]                              [ReAct Feedback Evaluator]
-          (Clasificación de rol ontológico)                       ¿Ocurrió un evento físico real?
+          (Clasificación de rol ontológico)                                │
                      │                                                     │
                      └──────────────────────────┬──────────────────────────┘
+                                                │
+                                ¿Ocurrió un evento físico real?
                                                 │
                                    ┌────────────┴────────────┐
                                    ▼ SÍ                      ▼ NO
