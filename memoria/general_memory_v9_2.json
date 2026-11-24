@@ -1,0 +1,168 @@
+{
+    "principles": [
+        {
+            "id": "principle_1",
+            "failure_signature": "Q2_CAUSAL_ORDER_FIRST",
+            "escalation_level": 1,
+            "category": "STRATEGY_Q2",
+            "context_tag": "HAS_LOCKED_GOALS",
+            "priority_tier": 1,
+            "rule_text": "Never approach a multi-requirement terminal until every required item is held or stored in its matching slot.",
+            "weight": 2.0,
+            "active": true,
+            "reinforcements": 6,
+            "regressions": 0,
+            "learned_from": "Mision_Receptaculos",
+            "updated_at": "2026-11-12T16:27:58"
+        },
+        {
+            "id": "principle_2",
+            "failure_signature": "Q2_SAFE_SPATIAL_TIEBREAK",
+            "escalation_level": 0,
+            "category": "STRATEGY_Q2",
+            "context_tag": "MULTI_TARGET",
+            "priority_tier": 2,
+            "rule_text": "Among unlocked items or intermediate slots of equal causal priority, choose the closest one (lowest steps) to reduce backtracking.",
+            "weight": 1.5,
+            "active": true,
+            "reinforcements": 3,
+            "regressions": 0,
+            "learned_from": "Mision_Receptaculos",
+            "updated_at": "2026-11-12T16:23:45"
+        },
+        {
+            "id": "principle_3",
+            "failure_signature": "Q2_EXCLUSION_AND_PREREQ_TIMEOUT",
+            "escalation_level": 0,
+            "category": "STRATEGY_Q2",
+            "context_tag": "ALWAYS",
+            "priority_tier": 1,
+            "rule_text": "Respect negative exclusions (e.g., unloaded, without X, incompatible) and complete all prerequisite items or switches before targeting final terminals.",
+            "weight": 1.35,
+            "active": true,
+            "reinforcements": 1,
+            "regressions": 0,
+            "learned_from": "Mision Árbol de Dependencias Causal Ramificado",
+            "updated_at": "2026-11-12T16:50:50"
+        }
+    ],
+    "episode_history": [
+        {
+            "mission_id": "Mision_Sequential_Depth_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 46,
+            "ideal_steps": 46,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T16:19:27"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 66,
+            "ideal_steps": 38,
+            "spl": 0.5758,
+            "timestamp": "2026-11-12T16:23:45"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 66,
+            "ideal_steps": 38,
+            "spl": 0.5758,
+            "timestamp": "2026-11-12T16:27:58"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 66,
+            "ideal_steps": 38,
+            "spl": 0.5758,
+            "timestamp": "2026-11-12T16:32:14"
+        },
+        {
+            "mission_id": "Mision_Sequential_Depth_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 32,
+            "ideal_steps": 34,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T16:33:44"
+        },
+        {
+            "mission_id": "Mision_Lexical_Hijacking_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 4,
+            "ideal_steps": 4,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T16:34:12"
+        },
+        {
+            "mission_id": "Mision_Activates_switches_in_order",
+            "success": true,
+            "timed_out": false,
+            "steps": 21,
+            "ideal_steps": 16,
+            "spl": 0.7619,
+            "timestamp": "2026-11-12T16:35:23"
+        },
+        {
+            "mission_id": "Mision_Activates_switches_in_order",
+            "success": true,
+            "timed_out": false,
+            "steps": 21,
+            "ideal_steps": 16,
+            "spl": 0.7619,
+            "timestamp": "2026-11-12T16:36:37"
+        },
+        {
+            "mission_id": "Mision Asociación Funcional por Propiedades Físicas",
+            "success": true,
+            "timed_out": false,
+            "steps": 66,
+            "ideal_steps": 30,
+            "spl": 0.4545,
+            "timestamp": "2026-11-12T16:40:08"
+        },
+        {
+            "mission_id": "Mision Asociación Funcional por Propiedades Físicas",
+            "success": true,
+            "timed_out": false,
+            "steps": 66,
+            "ideal_steps": 30,
+            "spl": 0.4545,
+            "timestamp": "2026-11-12T16:43:42"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": true,
+            "timed_out": false,
+            "steps": 27,
+            "ideal_steps": 16,
+            "spl": 0.5926,
+            "timestamp": "2026-11-12T16:45:12"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": true,
+            "timed_out": false,
+            "steps": 27,
+            "ideal_steps": 16,
+            "spl": 0.5926,
+            "timestamp": "2026-11-12T16:46:53"
+        },
+        {
+            "mission_id": "Mision Árbol de Dependencias Causal Ramificado",
+            "success": false,
+            "timed_out": true,
+            "steps": 65,
+            "ideal_steps": 48,
+            "spl": 0.0,
+            "timestamp": "2026-11-12T16:50:54"
+        }
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "principles": [
+        {
+            "id": "principle_1",
+            "failure_signature": "Q2_SAFE_SPATIAL_TIEBREAK",
+            "escalation_level": 0,
+            "category": "STRATEGY_Q2",
+            "context_tag": "MULTI_TARGET",
+            "priority_tier": 2,
+            "rule_text": "Among unlocked items or intermediate slots of equal causal priority, choose the closest one (lowest steps) to reduce backtracking.",
+            "weight": 0.45,
+            "active": false,
+            "reinforcements": 1,
+            "regressions": 1,
+            "learned_from": "Mision_Receptaculos",
+            "updated_at": "2026-11-12T17:10:15"
+        },
+        {
+            "id": "principle_2",
+            "failure_signature": "Q2_CAUSAL_ORDER_FIRST",
+            "escalation_level": 1,
+            "category": "STRATEGY_Q2",
+            "context_tag": "HAS_LOCKED_GOALS",
+            "priority_tier": 1,
+            "rule_text": "Never approach a multi-requirement console until every required item is held or stored in its matching slot.",
+            "weight": 2.0,
+            "active": true,
+            "reinforcements": 5,
+            "regressions": 0,
+            "learned_from": "Mision Asociación Funcional por Propiedades Físicas",
+            "updated_at": "2026-11-12T17:26:51"
+        }
+    ],
+    "episode_history": [
+        {
+            "mission_id": "Mision_Sequential_Depth_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 46,
+            "ideal_steps": 46,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T17:05:37"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 73,
+            "ideal_steps": 38,
+            "spl": 0.5205,
+            "timestamp": "2026-11-12T17:10:15"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 78,
+            "ideal_steps": 38,
+            "spl": 0.4872,
+            "timestamp": "2026-11-12T17:15:01"
+        },
+        {
+            "mission_id": "Mision_Sequential_Depth_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 32,
+            "ideal_steps": 34,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T17:16:36"
+        },
+        {
+            "mission_id": "Mision_Lexical_Hijacking_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 4,
+            "ideal_steps": 4,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T17:17:03"
+        },
+        {
+            "mission_id": "Mision_Activates_switches_in_order",
+            "success": true,
+            "timed_out": false,
+            "steps": 21,
+            "ideal_steps": 16,
+            "spl": 0.7619,
+            "timestamp": "2026-11-12T17:18:15"
+        },
+        {
+            "mission_id": "Mision_Activates_switches_in_order",
+            "success": true,
+            "timed_out": false,
+            "steps": 23,
+            "ideal_steps": 16,
+            "spl": 0.6957,
+            "timestamp": "2026-11-12T17:19:37"
+        },
+        {
+            "mission_id": "Mision Asociación Funcional por Propiedades Físicas",
+            "success": true,
+            "timed_out": false,
+            "steps": 64,
+            "ideal_steps": 30,
+            "spl": 0.4688,
+            "timestamp": "2026-11-12T17:23:03"
+        },
+        {
+            "mission_id": "Mision Asociación Funcional por Propiedades Físicas",
+            "success": true,
+            "timed_out": false,
+            "steps": 66,
+            "ideal_steps": 30,
+            "spl": 0.4545,
+            "timestamp": "2026-11-12T17:26:51"
+        },
+        {
+            "mission_id": "Mision Asociación Funcional por Propiedades Físicas",
+            "success": true,
+            "timed_out": false,
+            "steps": 66,
+            "ideal_steps": 30,
+            "spl": 0.4545,
+            "timestamp": "2026-11-12T17:30:33"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": true,
+            "timed_out": false,
+            "steps": 31,
+            "ideal_steps": 16,
+            "spl": 0.5161,
+            "timestamp": "2026-11-12T17:32:25"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": true,
+            "timed_out": false,
+            "steps": 31,
+            "ideal_steps": 16,
+            "spl": 0.5161,
+            "timestamp": "2026-11-12T17:34:18"
+        },
+        {
+            "mission_id": "Mision Árbol de Dependencias Causal Ramificado",
+            "success": true,
+            "timed_out": false,
+            "steps": 59,
+            "ideal_steps": 48,
+            "spl": 0.8136,
+            "timestamp": "2026-11-12T17:38:36"
+        },
+        {
+            "mission_id": "Mision Árbol de Dependencias Causal Ramificado",
+            "success": true,
+            "timed_out": false,
+            "steps": 59,
+            "ideal_steps": 48,
+            "spl": 0.8136,
+            "timestamp": "2026-11-12T17:42:31"
+        },
+        {
+            "mission_id": "Mision Secuencia de Estados Ambientales Irreversibles",
+            "success": true,
+            "timed_out": false,
+            "steps": 23,
+            "ideal_steps": 18,
+            "spl": 0.7826,
+            "timestamp": "2026-11-12T17:43:48"
+        },
+        {
+            "mission_id": "Mision Secuencia de Estados Ambientales Irreversibles",
+            "success": true,
+            "timed_out": false,
+            "steps": 23,
+            "ideal_steps": 18,
+            "spl": 0.7826,
+            "timestamp": "2026-11-12T17:45:05"
+        }
+    ]
+}

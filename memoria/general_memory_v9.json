@@ -1,0 +1,188 @@
+{
+    "principles": [
+        {
+            "id": "principle_1",
+            "failure_signature": "Q2_CAUSAL_ORDER_FIRST",
+            "escalation_level": 1,
+            "category": "STRATEGY_Q2",
+            "context_tag": "HAS_LOCKED_GOALS",
+            "priority_tier": 1,
+            "rule_text": "Only target a locked console when its exact listed requirements are satisfied; never collect unrelated distractor items.",
+            "rule_variants": [
+                "Target only the items or switches explicitly required by locked goals; ignore unrelated portable items.",
+                "Only target a locked console when its exact listed requirements are satisfied; never collect unrelated distractor items."
+            ],
+            "weight": 2.0,
+            "active": true,
+            "reinforcements": 7,
+            "regressions": 0,
+            "learned_from": "Mision_Receptaculos",
+            "updated_at": "2026-11-12T18:22:43"
+        },
+        {
+            "id": "principle_2",
+            "failure_signature": "Q2_SAFE_SPATIAL_TIEBREAK",
+            "escalation_level": 1,
+            "category": "STRATEGY_Q2",
+            "context_tag": "MULTI_TARGET",
+            "priority_tier": 2,
+            "rule_text": "Use proximity (lowest steps) only to pick the nearest needed item or its matching local slot, never to approach multi-requirement consoles.",
+            "rule_variants": [
+                "Among unlocked items or intermediate slots of equal causal priority, choose the closest one (lowest steps) to reduce backtracking.",
+                "Use proximity (lowest steps) only to pick the nearest needed item or its matching local slot, never to approach multi-requirement consoles."
+            ],
+            "weight": 1.85,
+            "active": true,
+            "reinforcements": 5,
+            "regressions": 0,
+            "learned_from": "Mision_Receptaculos",
+            "updated_at": "2026-11-12T18:22:43"
+        }
+    ],
+    "episode_history": [
+        {
+            "mission_id": "Mision_Sequential_Depth_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 46,
+            "ideal_steps": 46,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T17:57:55"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 78,
+            "ideal_steps": 38,
+            "spl": 0.4872,
+            "timestamp": "2026-11-12T18:17:01"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 78,
+            "ideal_steps": 38,
+            "spl": 0.4872,
+            "timestamp": "2026-11-12T18:22:43"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 78,
+            "ideal_steps": 38,
+            "spl": 0.4872,
+            "timestamp": "2026-11-12T18:28:09"
+        },
+        {
+            "mission_id": "Mision_Sequential_Depth_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 32,
+            "ideal_steps": 34,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T18:29:49"
+        },
+        {
+            "mission_id": "Mision_Lexical_Hijacking_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 4,
+            "ideal_steps": 4,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T18:30:20"
+        },
+        {
+            "mission_id": "Mision_Activates_switches_in_order",
+            "success": true,
+            "timed_out": false,
+            "steps": 21,
+            "ideal_steps": 16,
+            "spl": 0.7619,
+            "timestamp": "2026-11-12T18:31:59"
+        },
+        {
+            "mission_id": "Mision_Activates_switches_in_order",
+            "success": true,
+            "timed_out": false,
+            "steps": 21,
+            "ideal_steps": 16,
+            "spl": 0.7619,
+            "timestamp": "2026-11-12T18:33:13"
+        },
+        {
+            "mission_id": "Mision Asociación Funcional por Propiedades Físicas",
+            "success": true,
+            "timed_out": false,
+            "steps": 95,
+            "ideal_steps": 30,
+            "spl": 0.3158,
+            "timestamp": "2026-11-12T18:38:26"
+        },
+        {
+            "mission_id": "Mision Asociación Funcional por Propiedades Físicas",
+            "success": true,
+            "timed_out": false,
+            "steps": 95,
+            "ideal_steps": 30,
+            "spl": 0.3158,
+            "timestamp": "2026-11-12T18:44:06"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": true,
+            "timed_out": false,
+            "steps": 31,
+            "ideal_steps": 16,
+            "spl": 0.5161,
+            "timestamp": "2026-11-12T18:46:05"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": true,
+            "timed_out": false,
+            "steps": 31,
+            "ideal_steps": 16,
+            "spl": 0.5161,
+            "timestamp": "2026-11-12T18:48:06"
+        },
+        {
+            "mission_id": "Mision Árbol de Dependencias Causal Ramificado",
+            "success": true,
+            "timed_out": false,
+            "steps": 96,
+            "ideal_steps": 48,
+            "spl": 0.5,
+            "timestamp": "2026-11-12T18:54:12"
+        },
+        {
+            "mission_id": "Mision Árbol de Dependencias Causal Ramificado",
+            "success": true,
+            "timed_out": false,
+            "steps": 96,
+            "ideal_steps": 48,
+            "spl": 0.5,
+            "timestamp": "2026-11-12T18:59:13"
+        },
+        {
+            "mission_id": "Mision Secuencia de Estados Ambientales Irreversibles",
+            "success": true,
+            "timed_out": false,
+            "steps": 23,
+            "ideal_steps": 18,
+            "spl": 0.7826,
+            "timestamp": "2026-11-12T19:00:29"
+        },
+        {
+            "mission_id": "Mision Secuencia de Estados Ambientales Irreversibles",
+            "success": true,
+            "timed_out": false,
+            "steps": 23,
+            "ideal_steps": 18,
+            "spl": 0.7826,
+            "timestamp": "2026-11-12T19:01:48"
+        }
+    ]
+}

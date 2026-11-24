@@ -1,0 +1,237 @@
+{
+    "principles": [
+        {
+            "id": "principle_3",
+            "failure_signature": "Q2_PREMATURE_EXPLORE_TIMEOUT",
+            "escalation_level": 1,
+            "category": "STRATEGY_Q2",
+            "context_tag": "ALWAYS",
+            "rule_text": "CRITICAL: Do not waste steps exploring when known devices or portable items remain uncompleted in the room.",
+            "weight": 2.5,
+            "reinforcements": 4,
+            "learned_from": "Mision Restricción Negativa Excluyente",
+            "updated_at": "2026-11-12T16:03:42"
+        },
+        {
+            "id": "principle_4",
+            "failure_signature": "Q1_DISTRACTOR_PICKUP",
+            "escalation_level": 1,
+            "category": "PERCEPTION_Q1",
+            "context_tag": "ALWAYS",
+            "rule_text": "Ignore decorative objects or redundant items not required by any device or mission goal by classifying them as USELESS_SCRAP.",
+            "weight": 2.5,
+            "reinforcements": 6,
+            "learned_from": "Mision Restricción Negativa Excluyente",
+            "updated_at": "2026-11-12T16:03:42"
+        },
+        {
+            "id": "principle_1",
+            "failure_signature": "Q2_SPATIAL_SUBOPTIMAL_SPL",
+            "escalation_level": 1,
+            "category": "STRATEGY_Q2",
+            "context_tag": "MULTI_TARGET",
+            "rule_text": "Minimize travel distance: always pick up the nearest needed item and immediately use its matching local slot or switch.",
+            "weight": 2.5,
+            "reinforcements": 12,
+            "learned_from": "Mision_Receptaculos",
+            "updated_at": "2026-11-12T16:06:08"
+        },
+        {
+            "id": "principle_2",
+            "failure_signature": "Q2_GREEDY_LOCKED_GOAL",
+            "escalation_level": 1,
+            "category": "STRATEGY_Q2",
+            "context_tag": "HAS_LOCKED_GOALS",
+            "rule_text": "Verify every required item and negative exclusion on locked goals before approaching them.",
+            "weight": 2.2,
+            "reinforcements": 8,
+            "learned_from": "Mision_Receptaculos",
+            "updated_at": "2026-11-12T15:56:49"
+        },
+        {
+            "id": "principle_5",
+            "failure_signature": "Q1_FALSE_SCRAP_TIMEOUT",
+            "escalation_level": 0,
+            "category": "PERCEPTION_Q1",
+            "context_tag": "ALWAYS",
+            "rule_text": "Only classify obvious trash or broken debris as USELESS_SCRAP; treat containers, vats, cores, and terminals as ENVIRONMENT_DEVICE.",
+            "weight": 1.35,
+            "reinforcements": 1,
+            "learned_from": "Mision Restricción Negativa Excluyente",
+            "updated_at": "2026-11-12T15:54:29"
+        }
+    ],
+    "episode_history": [
+        {
+            "mission_id": "Mision_Sequential_Depth_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 46,
+            "ideal_steps": 46,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T15:16:50"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 73,
+            "ideal_steps": 38,
+            "spl": 0.5205,
+            "timestamp": "2026-11-12T15:21:14"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 86,
+            "ideal_steps": 38,
+            "spl": 0.4419,
+            "timestamp": "2026-11-12T15:26:01"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 81,
+            "ideal_steps": 38,
+            "spl": 0.4691,
+            "timestamp": "2026-11-12T15:30:38"
+        },
+        {
+            "mission_id": "Mision_Receptaculos",
+            "success": true,
+            "timed_out": false,
+            "steps": 81,
+            "ideal_steps": 38,
+            "spl": 0.4691,
+            "timestamp": "2026-11-12T15:35:16"
+        },
+        {
+            "mission_id": "Mision_Sequential_Depth_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 32,
+            "ideal_steps": 34,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T15:36:46"
+        },
+        {
+            "mission_id": "Mision_Lexical_Hijacking_Test",
+            "success": true,
+            "timed_out": false,
+            "steps": 4,
+            "ideal_steps": 4,
+            "spl": 1.0,
+            "timestamp": "2026-11-12T15:37:12"
+        },
+        {
+            "mission_id": "Mision_Activates_switches_in_order",
+            "success": true,
+            "timed_out": false,
+            "steps": 21,
+            "ideal_steps": 16,
+            "spl": 0.7619,
+            "timestamp": "2026-11-12T15:38:18"
+        },
+        {
+            "mission_id": "Mision_Activates_switches_in_order",
+            "success": true,
+            "timed_out": false,
+            "steps": 23,
+            "ideal_steps": 16,
+            "spl": 0.6957,
+            "timestamp": "2026-11-12T15:39:34"
+        },
+        {
+            "mission_id": "Mision Asociación Funcional por Propiedades Físicas",
+            "success": true,
+            "timed_out": false,
+            "steps": 66,
+            "ideal_steps": 30,
+            "spl": 0.4545,
+            "timestamp": "2026-11-12T15:48:28"
+        },
+        {
+            "mission_id": "Mision Asociación Funcional por Propiedades Físicas",
+            "success": true,
+            "timed_out": false,
+            "steps": 66,
+            "ideal_steps": 30,
+            "spl": 0.4545,
+            "timestamp": "2026-11-12T15:51:51"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": false,
+            "timed_out": true,
+            "steps": 34,
+            "ideal_steps": 16,
+            "spl": 0.0,
+            "timestamp": "2026-11-12T15:53:28"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": false,
+            "timed_out": true,
+            "steps": 18,
+            "ideal_steps": 16,
+            "spl": 0.0,
+            "timestamp": "2026-11-12T15:54:33"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": true,
+            "timed_out": false,
+            "steps": 22,
+            "ideal_steps": 16,
+            "spl": 0.7273,
+            "timestamp": "2026-11-12T15:55:43"
+        },
+        {
+            "mission_id": "Mision Restricción Negativa Excluyente",
+            "success": true,
+            "timed_out": false,
+            "steps": 22,
+            "ideal_steps": 16,
+            "spl": 0.7273,
+            "timestamp": "2026-11-12T15:56:53"
+        },
+        {
+            "mission_id": "Mision Árbol de Dependencias Causal Ramificado",
+            "success": false,
+            "timed_out": true,
+            "steps": 84,
+            "ideal_steps": 48,
+            "spl": 0.0,
+            "timestamp": "2026-11-12T16:00:43"
+        },
+        {
+            "mission_id": "Mision Árbol de Dependencias Causal Ramificado",
+            "success": false,
+            "timed_out": true,
+            "steps": 52,
+            "ideal_steps": 48,
+            "spl": 0.0,
+            "timestamp": "2026-11-12T16:03:46"
+        },
+        {
+            "mission_id": "Mision Secuencia de Estados Ambientales Irreversibles",
+            "success": true,
+            "timed_out": false,
+            "steps": 23,
+            "ideal_steps": 18,
+            "spl": 0.7826,
+            "timestamp": "2026-11-12T16:04:58"
+        },
+        {
+            "mission_id": "Mision Secuencia de Estados Ambientales Irreversibles",
+            "success": true,
+            "timed_out": false,
+            "steps": 23,
+            "ideal_steps": 18,
+            "spl": 0.7826,
+            "timestamp": "2026-11-12T16:06:08"
+        }
+    ]
+}
